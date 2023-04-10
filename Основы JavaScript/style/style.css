@@ -1,0 +1,55 @@
+body {
+    background-image: url(https://i.artfile.ru/2048x1152_1248210_[www.ArtFile.ru].jpg);
+    background-size: cover;
+    text-align: left;
+    font-family: cursive;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+h1.home, h1.pages, h1.blog, h1.contact, h1.help{
+    display:inline;
+    margin-left: 20px;
+}
+
+h1.office{
+    text-align: right;
+}
+
+h2{
+    text-align: center;
+    margin-top: 60px;
+}
+
+h4{
+    text-align: center;
+}
+
+h3{
+    position: absolute;
+    bottom: 0;
+}
+
+img.user{
+    display: inline;
+    float: right;
+    margin-right: 70px;
+}
+
+img.cocktail{
+    display:block;
+    margin:auto;
+}
+
+.may_input {
+    position: absolute;
+    bottom: 50px;
+}
+
+.may_button{
+    position: absolute;
+    bottom: 50px;
+    left: 190px;
+    font-family: cursive;
+    color: royalblue;
+}
