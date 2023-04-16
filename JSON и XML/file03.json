@@ -1,0 +1,28 @@
+{
+    "user": [
+        {
+            "id": "1",
+            "name ": "Timon",
+            "age ": "23",
+            "address  ": "California"
+        },
+        {
+            "id": "2",
+            "name ": "Niko",
+            "age ": "29",
+            "address  ": "Texas"
+        },
+        {
+            "id": "3",
+            "name ": "Alex",
+            "age ": "27",
+            "address  ": "Florida"
+        },
+        {
+            "id": "4",
+            "name ": "Bob",
+            "age ": "24",
+            "address  ": "Colorado"
+        }
+    ]
+}
