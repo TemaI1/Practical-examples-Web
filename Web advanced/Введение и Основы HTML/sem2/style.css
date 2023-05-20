@@ -1,0 +1,15 @@
+body{
+    background-color: CadetBlue;
+}
+
+.title{
+    color: DarkSlateGrey;
+    background-color: PowderBlue;
+    font-style: italic;
+    text-align: center;
+}
+
+.heading{
+    color: #FFE4B5;
+    font-family: sans-serif;
+}
