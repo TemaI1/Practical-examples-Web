@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header{
+    margin-top: 40px;
+    margin-left: 375px;
+}
+
+.header_menu{
+    padding-left: 637px;
+}
+
+.top_content{
+    margin-top: 84px;
+    margin-left: 373px;
+}
+
+.top_title{
+    padding-bottom: 17px;
+}
+
+.top_buttons{
+    padding-top: 37px;
+}
+
+.top_info_img{
+    padding-left: 561px;
+}
+
+.top_logo{
+    margin-top: 97px;
+    margin-left: 345px;
+}
+
+.top_logo_icon{
+    padding-right: 48px;
+}
