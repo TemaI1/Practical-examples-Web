@@ -33,8 +33,6 @@
 .top_logo{
     margin-top: 97px;
     margin-left: 345px;
-}
-
-.top_logo_icon{
-    padding-right: 48px;
+    display: flex;
+    gap: 48px;
 }
