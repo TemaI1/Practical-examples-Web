@@ -7,15 +7,19 @@
 .header{
     margin-top: 40px;
     margin-left: 375px;
-}
-
-.header_menu{
-    padding-left: 637px;
+    display: flex;
+    gap: 500px;
 }
 
 .top_content{
     margin-top: 84px;
     margin-left: 373px;
+    display: flex;
+    gap: 39px;
+}
+
+.top_info{
+    width: 522px;
 }
 
 .top_title{
@@ -24,10 +28,6 @@
 
 .top_buttons{
     padding-top: 37px;
-}
-
-.top_info_img{
-    padding-left: 561px;
 }
 
 .top_logo{
