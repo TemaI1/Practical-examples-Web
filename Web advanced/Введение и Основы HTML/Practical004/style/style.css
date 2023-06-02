@@ -16,8 +16,20 @@
     gap: 500px;
 }
 
+.header_menu_link{
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 25px;
+}
+
+.header_menu_home{
+    color: #F25822;
+}
+
 .top_content{
     margin-top: 84px;
+    margin-bottom: 162px;
     display: flex;
     gap: 39px;
 }
@@ -32,8 +44,36 @@
     line-height: 70px;
 }
 
+.top_text{
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
+    width: 466px;
+}
+
 .top_buttons{
     padding-top: 37px;
+}
+
+.button_start{
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    border: none;
+    padding: 15px 36px 16px 35px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-right: 72px;
+}
+
+.button_watch{
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 15px;
+    line-height: 18px;
+    color: #AAAAAA;
 }
 
 .top_logo{
