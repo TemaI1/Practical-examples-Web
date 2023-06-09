@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.all_content{
+    padding-left: calc(50% - 1000px);
+    padding-right: calc(50% - 1000px);
+}
+
+.top_menu{
+    display: flex;
+    gap: 630px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.top_menu_logo{
+    font-weight: 400;
+    font-size: 37.2456px;
+    line-height: 56px;
+}
+
+.color_text{
+    color: #F7A32D;
+}
+
+.top_menu_link{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    color: #000000;
+    font-weight: 400;
+    font-size: 21.0328px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+}
+
+.section_top{
+    display: flex;
+    gap: 90px;
+    justify-content: right;
+    margin-top: 163px;
+}
+
+.section_top_left{
+    width: 836.75px;
+    height: 611.95px;
+    padding: 35px 25px;
+}
+
+.top_left_text{
+    font-weight: 400;
+    font-size: 24.0375px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.top_left_title{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 85.1328px;
+    line-height: 104px;
+    color: #F7A32D;
+}
+
+.top_left_subtitle{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 85.1328px;
+    line-height: 103px;
+    color: #000000;
+}
+
+.top_left_text_second{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 32.05px;
+    line-height: 39px;
+    color: #483F3F;
+}
+
+.top_left_button{
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 26.0406px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #F7A32D;
+    padding: 16px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.section_second{
+    display: flex;
+    gap: 120px;
+    justify-content: left;
+    margin-top: 163px;
+}
+
+.section_second_right{
+    width: 632.76px;
+    height: 570.89px;
+    padding: 35px 25px;
+}
+
+.second_right_title{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 60.0937px;
+    line-height: 73px;
+    color: #000000;
+}
+
+.second_right_text{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 32.05px;
+    line-height: 39px;
+    color: #483F3F;
+}
