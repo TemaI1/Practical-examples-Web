@@ -225,3 +225,18 @@ body{
         height: 116px;
     }
 }
+
+@media(max-width: 768px){
+    .top_menu{
+        gap: 33px;
+    }
+
+    .top_content_photo{
+        display: none;
+    }
+
+    .top_content{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
