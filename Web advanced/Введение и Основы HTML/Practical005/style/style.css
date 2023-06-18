@@ -21,6 +21,23 @@ body{
     padding-right: calc(50% - 570px);
 }
 
+.top_menu:hover::after {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    content: 'MENU';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    width: 232px;
+    height: 634px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* top_menu */
 
 .top_menu{
@@ -165,6 +182,24 @@ body{
 
 .content_store_box{
     background: #F8F8F8;
+    position: relative;
+}
+
+.content_store_box:hover .content_store_box_img{
+    filter: brightness(40%);
+}
+
+.content_box_add:hover::after {
+    position: absolute;
+    top: 188px;
+    right: 140px;
+    content: 'Add to Cart';
+    border: 1px solid #F8F8F8;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 }
 
 .store_box_text{
@@ -209,6 +244,159 @@ body{
     background-color: #FFFFFF;
 }
 
+.button_store:hover{
+    color: #FFFFFF;
+    background-color: #F26376;
+}
+
+/* footer */
+
+.footer_line_info{
+    padding-top: 104px;
+    padding-bottom: 104px;
+    display: flex;
+    gap: 30px;
+    background-color: #222224;
+}
+
+.footer_line_box{
+    display: flex;
+    flex-flow: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_box_title{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.footer_box_text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.footer_content{
+    padding-top: 97px;
+    padding-bottom: 126px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 220px;
+    justify-content: center;
+    background-image: url(../img/photo_subscribe.jpg);
+}
+
+.footer_content_box_left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+}
+
+.footer_left_text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.footer_content_box_right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+}
+
+.footer_right_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.footer_right_subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.footer_entry_field{
+    display: flex;
+}
+
+.footer_input{
+    padding: 17px 64px 17px 22px;
+    background: #E1E1E1;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.footer_button{
+    padding: 17px;
+    background: #F16D7F;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer_button:active{
+    background: #FFFFFF;
+    color: #F16D7F;
+}
+
+.footer_link{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #222224;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_link_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer_link_right{
+    display: flex;
+    gap: 10px;
+}
+
+.footer_icon:hover{
+    width: 40px;
+
+}
 
 @media(max-width: 1024px){
     .top_menu{
@@ -224,6 +412,10 @@ body{
         width: 756px;
         height: 116px;
     }
+
+    .footer_link{
+        gap: 300px;
+    }
 }
 
 @media(max-width: 768px){
@@ -238,5 +430,20 @@ body{
     .top_content{
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .footer_link{
+        gap: 100px;
+    }
+}
+
+@media(max-width: 600px){
+    .footer_line_info{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer_link{
+        gap: 30px;
     }
 }
