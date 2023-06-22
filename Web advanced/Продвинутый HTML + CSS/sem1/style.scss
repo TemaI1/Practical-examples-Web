@@ -1,0 +1,30 @@
+@import 'vars';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.all_content{
+    color: $colorText;
+    text-align: center;
+}
+
+.box2, .box4{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: $backColor;
+}
+
+.box5{
+    margin-top: 20px;
+    border: 4px solid rgb(73, 0, 16);
+    
+    .text_box5{
+        color:rgb(73, 0, 16);
+    }
+}
