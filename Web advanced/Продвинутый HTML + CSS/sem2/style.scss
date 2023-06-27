@@ -1,0 +1,76 @@
+// Текст задания 
+// Создать элемент details и добавить в него произвольный контент
+// Добавить элемент summary с произвольным текстом
+// Удалить стандартный треугольник у элемента details.
+// Добавить стили для элемента summary
+// Заменить стандартный треугольник на стрелку вправо \2192	 
+// При открытии блока details заменить на стрелку вниз (данный код нужно найти в интернете)
+
+summary{
+    display: flex;
+    gap: 30px;
+
+    &::after{
+        content: "\2192";
+    }
+}
+
+details[open]{
+
+    summary::after{
+        content: "\261F";
+    }
+
+}
+
+// Дана страница каталога https://www.figma.com/file/SbfOi2i4S1pIs0G6uOLPCx/shop-(Copy)?node-id=52%3A0&t=yqDGV1NUHY97IcQQ-0 
+// Необходимо реализовать блок sort (данный блок находится в слоях figma)
+// Создать 3 элемента details (TRENDING NOW, SIZE, PRICE)
+// При клике на элемент SIZE появляется выпадающая сортировка.
+
+.quest2{
+    margin: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.details2{
+    display: flex;
+    gap: 30px;
+}
+
+.label{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin-left: -20px;
+}
+
+// На главной странице интернет магазина https://www.figma.com/file/SbfOi2i4S1pIs0G6uOLPCx/shop-(Copy)?node-id=24%3A0&t=yqDGV1NUHY97IcQQ-0 есть бургер меню
+// Без использования элемента details необходимо реализовать клик на изображение бургера меню
+// При клике должен появляться блок menu-burger, при повторном клике на данное изображение, данный блок должен пропадать 
+// Выпадающий блок должен плавно появляться из правой части сайта.
+
+.quest3 {
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+.top {
+	position: relative;
+}
+
+#check:checked ~ .menu {
+    right: 0;
+}
+
+.menu {
+	position: absolute;
+	right: -220px;
+	transition: right 1s;
+}
+
+#check {
+	position: absolute;
+	left: -999999px;
+	visibility: hidden;
+}

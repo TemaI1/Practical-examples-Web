@@ -1,0 +1,54 @@
+@charset "UTF-8";
+summary {
+  display: flex;
+  gap: 30px;
+}
+summary::after {
+  content: "→";
+}
+
+details[open] summary::after {
+  content: "☟";
+}
+
+.quest2 {
+  margin: 100px;
+  display: flex;
+  gap: 30px;
+}
+
+.details2 {
+  display: flex;
+  gap: 30px;
+}
+
+.label {
+  background-color: antiquewhite;
+  padding: 5px;
+  margin-left: -20px;
+}
+
+.quest3 {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.top {
+  position: relative;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}
+
+.menu {
+  position: absolute;
+  right: -220px;
+  transition: right 1s;
+}
+
+#check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
