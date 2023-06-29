@@ -154,15 +154,88 @@ body {
 }
 
 /* filter */
-.filter_left_all_details[open] .filter_left_summary {
-  color: #F16D7F;
-  fill: #F16D7F;
+.filter {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.filter_left {
+  padding: 10px 10px;
+  width: 340px;
+  box-sizing: border-box;
+  position: absolute;
 }
 .filter_left_summary {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding: 5px;
+  border: 1px solid #EBEBEB;
+  border-bottom: none;
+  border-left: none;
 }
+.filter_left_summary:hover {
+  cursor: pointer;
+}
+.filter_left_details_category_summary {
+  margin-top: 10px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+}
+.filter_left_details_category[open] .filter_left_details_category_summary {
+  color: #F16D7F;
+}
+.filter_left_details_category_summary:hover {
+  cursor: pointer;
+}
+.filter_left_details_brand_summary {
+  margin-top: 10px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+}
+.filter_left_details_brand[open] .filter_left_details_brand_summary {
+  color: #F16D7F;
+}
+.filter_left_details_brand_summary:hover {
+  cursor: pointer;
+}
+.filter_left_details_designer_summary {
+  margin-top: 10px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+}
+.filter_left_details_designer[open] .filter_left_details_designer_summary {
+  color: #F16D7F;
+}
+.filter_left_details_designer_summary:hover {
+  cursor: pointer;
+}
+.filter_left_text {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0px 5px 10px;
+}
+.filter_left[open] {
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter_left[open] .filter_left_summary {
+  color: #F16D7F;
+  fill: #F16D7F;
+}
+
 /* midle */
 .midle_product {
   background-color: #F7F7F7;
@@ -332,7 +405,6 @@ body {
 }
 .content_store_center .content_store_box {
   background: #F8F8F8;
-  position: relative;
 }
 .content_store_center .content_store_box .store_box_text {
   margin: 24px 16px;
