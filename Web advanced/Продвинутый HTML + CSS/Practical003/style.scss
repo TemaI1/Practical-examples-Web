@@ -687,6 +687,7 @@ body{
             gap: 30px;
             background: $textColorTwo;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            position: relative;
     
             &_info{
                 display: flex;
@@ -717,6 +718,18 @@ body{
                         border: 1px solid $textColorOne;
                         color: $textColorOne;
                     }
+                }
+
+                &_close{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    fill: $textColorOne;
+                }
+
+                &_close:hover{
+                    fill: $contentColor;
+                    cursor: pointer;
                 }
             }
         }
