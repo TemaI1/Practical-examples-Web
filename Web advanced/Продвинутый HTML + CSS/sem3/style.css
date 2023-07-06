@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.may_section{
+    background-color:  #006475;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.may_section_aside{
+    background-color:  #00ff88;
+    height: 20vh;
+    width: 10vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+
+    /* блок привязан */
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    /* текст остается в блоке */
+    overflow: hidden;
+}
+
+.may_section_header{
+    background-color:  #00c3ff;
+    height: 20vh;
+}
+
+.may_section_footer{
+    background-color:  #ff5c85;
+    height: 20vh;
+}
+
+.flexs_box{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 200px;
+    
+    /* перенос блоков */
+    flex-wrap: wrap;
+}
+
+.flex_box{
+    height: 100px;
+    border: 1px solid #000;
+
+    /* занимает доступное пространство */
+    flex-grow: 1;
+
+    /* отвечает за ширину элемента */
+    flex-basis: 100px;
+}
+
+.flexs_boxx{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+
+.flex_boxx{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+
+    /* определяет фактор сжатия */
+    flex-shrink: 1;
+}
+
+.flex_boxx2{
+    flex-shrink: 2;
+}
+
+.grids_box{
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid_box{
+    min-height: 100px;
+    border: 1px solid #000;
+}
+
+.grid_box3{
+    grid-column: span 2;
+    grid-row: span 2;
+}
