@@ -844,6 +844,88 @@ body{
     }
 }
 
+.midle_regist{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    gap: 120px;
+
+    &_left{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &_title{
+            color: $backColor;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &_input{
+            width: 360px;
+            padding: 13px 15px;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &_radio{
+            display: flex;
+            gap: 10px;
+            color: $backColor;
+            font-size: 11px;
+            font-weight: 400;
+        }
+
+        &_text{
+            width: 360px;
+            color: $textColorOne;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &_button{
+            width: 200px;
+            color: $textColorTwo;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 16px 30px;
+            border: 1px solid $textColorTwo;
+            background-color: $contentColor;
+        }
+
+        &_button:hover{
+            color: $backColor;
+            border: 1px solid $textColorOne;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+
+    &_right{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        &_title{
+            color: $backColor;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &_subtitle{
+            color: $backColor;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &_text{
+            color: $backColor;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+
+}
 
 /* footer */
 
@@ -1020,6 +1102,18 @@ body{
 
     .midle_shop_right{
         margin-top: 50px;
+    }
+
+    .midle_regist{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &_left{
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
