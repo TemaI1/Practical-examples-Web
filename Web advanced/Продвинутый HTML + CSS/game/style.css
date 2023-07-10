@@ -1,0 +1,379 @@
+@keyframes dragoMovement1 {
+  0% {
+    left: -150px;
+    top: 14vh;
+  }
+  10% {
+    left: 10vw;
+    top: 2vh;
+  }
+  20% {
+    left: 20vw;
+    top: 63vh;
+  }
+  30% {
+    left: 30vw;
+    top: 54vh;
+  }
+  40% {
+    left: 40vw;
+    top: 37vh;
+  }
+  50% {
+    left: 50vw;
+    top: 78vh;
+  }
+  60% {
+    left: 60vw;
+    top: 51vh;
+  }
+  70% {
+    left: 70vw;
+    top: 17vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement2 {
+  0% {
+    left: -150px;
+    top: 7vh;
+  }
+  10% {
+    left: 10vw;
+    top: 27vh;
+  }
+  20% {
+    left: 20vw;
+    top: 10vh;
+  }
+  30% {
+    left: 30vw;
+    top: 68vh;
+  }
+  40% {
+    left: 40vw;
+    top: 51vh;
+  }
+  50% {
+    left: 50vw;
+    top: 31vh;
+  }
+  60% {
+    left: 60vw;
+    top: 76vh;
+  }
+  70% {
+    left: 70vw;
+    top: 80vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement3 {
+  0% {
+    left: -150px;
+    top: 71vh;
+  }
+  10% {
+    left: 10vw;
+    top: 13vh;
+  }
+  20% {
+    left: 20vw;
+    top: 9vh;
+  }
+  30% {
+    left: 30vw;
+    top: 7vh;
+  }
+  40% {
+    left: 40vw;
+    top: 78vh;
+  }
+  50% {
+    left: 50vw;
+    top: 64vh;
+  }
+  60% {
+    left: 60vw;
+    top: 33vh;
+  }
+  70% {
+    left: 70vw;
+    top: 76vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement4 {
+  0% {
+    left: -150px;
+    top: 45vh;
+  }
+  10% {
+    left: 10vw;
+    top: 67vh;
+  }
+  20% {
+    left: 20vw;
+    top: 59vh;
+  }
+  30% {
+    left: 30vw;
+    top: 54vh;
+  }
+  40% {
+    left: 40vw;
+    top: 8vh;
+  }
+  50% {
+    left: 50vw;
+    top: 11vh;
+  }
+  60% {
+    left: 60vw;
+    top: 12vh;
+  }
+  70% {
+    left: 70vw;
+    top: 63vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement5 {
+  0% {
+    left: -150px;
+    top: 70vh;
+  }
+  10% {
+    left: 10vw;
+    top: 2vh;
+  }
+  20% {
+    left: 20vw;
+    top: 49vh;
+  }
+  30% {
+    left: 30vw;
+    top: 30vh;
+  }
+  40% {
+    left: 40vw;
+    top: 60vh;
+  }
+  50% {
+    left: 50vw;
+    top: 3vh;
+  }
+  60% {
+    left: 60vw;
+    top: 22vh;
+  }
+  70% {
+    left: 70vw;
+    top: 53vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement6 {
+  0% {
+    left: -150px;
+    top: 61vh;
+  }
+  10% {
+    left: 10vw;
+    top: 53vh;
+  }
+  20% {
+    left: 20vw;
+    top: 18vh;
+  }
+  30% {
+    left: 30vw;
+    top: 31vh;
+  }
+  40% {
+    left: 40vw;
+    top: 13vh;
+  }
+  50% {
+    left: 50vw;
+    top: 67vh;
+  }
+  60% {
+    left: 60vw;
+    top: 16vh;
+  }
+  70% {
+    left: 70vw;
+    top: 5vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement7 {
+  0% {
+    left: -150px;
+    top: 12vh;
+  }
+  10% {
+    left: 10vw;
+    top: 37vh;
+  }
+  20% {
+    left: 20vw;
+    top: 57vh;
+  }
+  30% {
+    left: 30vw;
+    top: 53vh;
+  }
+  40% {
+    left: 40vw;
+    top: 51vh;
+  }
+  50% {
+    left: 50vw;
+    top: 42vh;
+  }
+  60% {
+    left: 60vw;
+    top: 9vh;
+  }
+  70% {
+    left: 70vw;
+    top: 28vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+@keyframes dragoMovement8 {
+  0% {
+    left: -150px;
+    top: 12vh;
+  }
+  10% {
+    left: 10vw;
+    top: 1vh;
+  }
+  20% {
+    left: 20vw;
+    top: 55vh;
+  }
+  30% {
+    left: 30vw;
+    top: 19vh;
+  }
+  40% {
+    left: 40vw;
+    top: 51vh;
+  }
+  50% {
+    left: 50vw;
+    top: 23vh;
+  }
+  60% {
+    left: 60vw;
+    top: 19vh;
+  }
+  70% {
+    left: 70vw;
+    top: 44vh;
+  }
+  100% {
+    left: 80vw;
+    top: 30vh;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  counter-reset: count;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url(mountains.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.drago {
+  position: absolute;
+}
+.drago_check {
+  position: absolute;
+  visibility: hidden;
+}
+.drago_check:checked {
+  counter-increment: count;
+}
+.drago_check:checked ~ label {
+  display: none;
+}
+.drago_img {
+  width: 150px;
+}
+.drago_img:hover {
+  cursor: pointer;
+}
+.drago_1 {
+  animation: dragoMovement1 10s linear 2s both;
+}
+.drago_2 {
+  animation: dragoMovement2 10s linear 4s both;
+}
+.drago_3 {
+  animation: dragoMovement3 10s linear 6s both;
+}
+.drago_4 {
+  animation: dragoMovement4 10s linear 8s both;
+}
+.drago_5 {
+  animation: dragoMovement5 10s linear 10s both;
+}
+.drago_6 {
+  animation: dragoMovement6 10s linear 12s both;
+}
+.drago_7 {
+  animation: dragoMovement7 10s linear 14s both;
+}
+.drago_8 {
+  animation: dragoMovement8 10s linear 16s both;
+}
+
+.world {
+  position: absolute;
+  right: 5vw;
+  top: 10vh;
+}
+
+.counter_info {
+  color: rgb(0, 83, 83);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.counter_info::after {
+  content: counter(count);
+}/*# sourceMappingURL=style.css.map */

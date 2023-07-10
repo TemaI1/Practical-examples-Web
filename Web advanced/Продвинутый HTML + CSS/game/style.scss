@@ -1,0 +1,107 @@
+$widthdrago: 150px;
+$countdrago: 8;
+
+@for $i from 1 through $countdrago {
+    @keyframes dragoMovement#{$i} {
+        0% {
+            left: -$widthdrago;
+            top: random(80)+vh;
+        }
+        10% {
+            left: 10vw;
+            top: random(80)+vh;
+        }
+        20% {
+            left: 20vw;
+            top: random(80)+vh;
+        }
+        30% {
+            left: 30vw;
+            top: random(80)+vh;
+        }
+        40% {
+            left: 40vw;
+            top: random(80)+vh;
+        }
+        50% {
+            left: 50vw;
+            top: random(80)+vh;
+        }
+        60% {
+            left: 60vw;
+            top: random(80)+vh;
+        }
+        70% {
+            left: 70vw;
+            top: random(80)+vh;
+        }
+        100% {
+            left: 80vw;
+            top: 30vh;
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    counter-reset: count;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.drago{
+    position: absolute;
+
+    &_check{
+        position: absolute;
+        visibility: hidden;
+
+        &:checked{
+            counter-increment: count;
+        }
+
+        &:checked ~ label{
+            display: none;
+        }
+    }
+
+    &_img{
+        width: $widthdrago;
+    }
+
+    &_img:hover{
+        cursor: pointer;
+    }
+
+    @for $i from 1 through $countdrago {
+        &_#{$i}{
+            animation: dragoMovement#{$i} 10s linear #{$i+$i}s both;
+        }
+    }
+}
+
+.world{
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+
+.counter_info{
+    color: rgb(0, 83, 83);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    &::after{
+        content: counter(count);
+    }
+}
