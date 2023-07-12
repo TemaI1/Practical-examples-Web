@@ -1027,4 +1027,19 @@ body {
   .midle_product_content_footer_menu {
     gap: 8px;
   }
+  .midle_shop_left_purchase_button {
+    padding: 5px;
+  }
+  .midle_shop_right_adress_input {
+    width: 260px;
+  }
+  .midle_shop_right_proceed {
+    width: 260px;
+  }
+  hr {
+    width: 250px;
+  }
+  .midle_regist_left_input {
+    width: 260px;
+  }
 }/*# sourceMappingURL=style.css.map */

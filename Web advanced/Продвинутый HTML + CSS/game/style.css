@@ -1,19 +1,19 @@
 @keyframes dragoMovement1 {
   0% {
     left: -150px;
-    top: 14vh;
+    top: 80vh;
   }
   10% {
     left: 10vw;
-    top: 2vh;
+    top: 44vh;
   }
   20% {
     left: 20vw;
-    top: 63vh;
+    top: 60vh;
   }
   30% {
     left: 30vw;
-    top: 54vh;
+    top: 7vh;
   }
   40% {
     left: 40vw;
@@ -21,15 +21,15 @@
   }
   50% {
     left: 50vw;
-    top: 78vh;
+    top: 4vh;
   }
   60% {
     left: 60vw;
-    top: 51vh;
+    top: 32vh;
   }
   70% {
     left: 70vw;
-    top: 17vh;
+    top: 43vh;
   }
   100% {
     left: 80vw;
@@ -39,35 +39,35 @@
 @keyframes dragoMovement2 {
   0% {
     left: -150px;
-    top: 7vh;
+    top: 69vh;
   }
   10% {
     left: 10vw;
-    top: 27vh;
+    top: 5vh;
   }
   20% {
     left: 20vw;
-    top: 10vh;
+    top: 53vh;
   }
   30% {
     left: 30vw;
-    top: 68vh;
+    top: 1vh;
   }
   40% {
     left: 40vw;
-    top: 51vh;
+    top: 77vh;
   }
   50% {
     left: 50vw;
-    top: 31vh;
+    top: 9vh;
   }
   60% {
     left: 60vw;
-    top: 76vh;
+    top: 44vh;
   }
   70% {
     left: 70vw;
-    top: 80vh;
+    top: 62vh;
   }
   100% {
     left: 80vw;
@@ -77,35 +77,35 @@
 @keyframes dragoMovement3 {
   0% {
     left: -150px;
-    top: 71vh;
+    top: 64vh;
   }
   10% {
     left: 10vw;
-    top: 13vh;
+    top: 61vh;
   }
   20% {
     left: 20vw;
-    top: 9vh;
+    top: 26vh;
   }
   30% {
     left: 30vw;
-    top: 7vh;
+    top: 20vh;
   }
   40% {
     left: 40vw;
-    top: 78vh;
+    top: 63vh;
   }
   50% {
     left: 50vw;
-    top: 64vh;
+    top: 47vh;
   }
   60% {
     left: 60vw;
-    top: 33vh;
+    top: 6vh;
   }
   70% {
     left: 70vw;
-    top: 76vh;
+    top: 70vh;
   }
   100% {
     left: 80vw;
@@ -115,35 +115,35 @@
 @keyframes dragoMovement4 {
   0% {
     left: -150px;
-    top: 45vh;
+    top: 80vh;
   }
   10% {
     left: 10vw;
-    top: 67vh;
+    top: 47vh;
   }
   20% {
     left: 20vw;
-    top: 59vh;
+    top: 4vh;
   }
   30% {
     left: 30vw;
-    top: 54vh;
+    top: 32vh;
   }
   40% {
     left: 40vw;
-    top: 8vh;
+    top: 21vh;
   }
   50% {
     left: 50vw;
-    top: 11vh;
+    top: 58vh;
   }
   60% {
     left: 60vw;
-    top: 12vh;
+    top: 46vh;
   }
   70% {
     left: 70vw;
-    top: 63vh;
+    top: 1vh;
   }
   100% {
     left: 80vw;
@@ -153,35 +153,35 @@
 @keyframes dragoMovement5 {
   0% {
     left: -150px;
-    top: 70vh;
+    top: 18vh;
   }
   10% {
     left: 10vw;
-    top: 2vh;
+    top: 66vh;
   }
   20% {
     left: 20vw;
-    top: 49vh;
+    top: 72vh;
   }
   30% {
     left: 30vw;
-    top: 30vh;
+    top: 57vh;
   }
   40% {
     left: 40vw;
-    top: 60vh;
+    top: 16vh;
   }
   50% {
     left: 50vw;
-    top: 3vh;
+    top: 74vh;
   }
   60% {
     left: 60vw;
-    top: 22vh;
+    top: 14vh;
   }
   70% {
     left: 70vw;
-    top: 53vh;
+    top: 59vh;
   }
   100% {
     left: 80vw;
@@ -191,11 +191,11 @@
 @keyframes dragoMovement6 {
   0% {
     left: -150px;
-    top: 61vh;
+    top: 15vh;
   }
   10% {
     left: 10vw;
-    top: 53vh;
+    top: 55vh;
   }
   20% {
     left: 20vw;
@@ -203,23 +203,23 @@
   }
   30% {
     left: 30vw;
-    top: 31vh;
+    top: 17vh;
   }
   40% {
     left: 40vw;
-    top: 13vh;
+    top: 69vh;
   }
   50% {
     left: 50vw;
-    top: 67vh;
+    top: 7vh;
   }
   60% {
     left: 60vw;
-    top: 16vh;
+    top: 26vh;
   }
   70% {
     left: 70vw;
-    top: 5vh;
+    top: 15vh;
   }
   100% {
     left: 80vw;
@@ -229,35 +229,35 @@
 @keyframes dragoMovement7 {
   0% {
     left: -150px;
-    top: 12vh;
+    top: 2vh;
   }
   10% {
     left: 10vw;
-    top: 37vh;
+    top: 25vh;
   }
   20% {
     left: 20vw;
-    top: 57vh;
+    top: 37vh;
   }
   30% {
     left: 30vw;
-    top: 53vh;
+    top: 44vh;
   }
   40% {
     left: 40vw;
-    top: 51vh;
+    top: 39vh;
   }
   50% {
     left: 50vw;
-    top: 42vh;
+    top: 38vh;
   }
   60% {
     left: 60vw;
-    top: 9vh;
+    top: 67vh;
   }
   70% {
     left: 70vw;
-    top: 28vh;
+    top: 15vh;
   }
   100% {
     left: 80vw;
@@ -267,35 +267,35 @@
 @keyframes dragoMovement8 {
   0% {
     left: -150px;
-    top: 12vh;
+    top: 27vh;
   }
   10% {
     left: 10vw;
-    top: 1vh;
+    top: 43vh;
   }
   20% {
     left: 20vw;
-    top: 55vh;
+    top: 51vh;
   }
   30% {
     left: 30vw;
-    top: 19vh;
+    top: 22vh;
   }
   40% {
     left: 40vw;
-    top: 51vh;
+    top: 53vh;
   }
   50% {
     left: 50vw;
-    top: 23vh;
+    top: 14vh;
   }
   60% {
     left: 60vw;
-    top: 19vh;
+    top: 75vh;
   }
   70% {
     left: 70vw;
-    top: 44vh;
+    top: 60vh;
   }
   100% {
     left: 80vw;
