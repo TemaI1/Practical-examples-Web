@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let numFirst = 5;
+        let numSecond = 7;
+        if (numFirst != numSecond) {
+            console.log(`${numFirst} не равняется ${numSecond}`)
+        } else{
+            console.log(`${numFirst} и ${numSecond} равны`)
+        }
+        console.log(typeof numFirst, typeof numSecond);
+
+
+        let student = {
+            firstName: "Artem", 
+            lastName: "May",
+            age: 24
+        };
+        console.log(`студент: ${student.lastName} ${student.firstName} ${student.age}`);
+        console.log(typeof student);
+
+        
+        let array = ["Джон Толкин 'Властелин колец'", "Джейн Остин 'Гордость и предубеждение'"]
+        console.log(array[0]);
+        console.log(`длина массива: ${array.length}`);
+        console.log(typeof array);
+
+
+        const fun = function(num){
+            return num + num;
+        }
+        console.log(fun(5));
+        console.log(fun.toString());
+        console.log(typeof fun);
+    </script>
+</body>
+</html>
