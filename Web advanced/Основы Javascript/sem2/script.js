@@ -1,7 +1,9 @@
 /* task1 */
+
 console.log("Text из script.js");
 
 // task2
+
 // let num = 123;
 // console.log(num);
 
@@ -12,7 +14,8 @@ console.log("Text из script.js");
 // let b = 1 + 2 + 3;
 // console.log(b);
 
-// // task3
+// task3
+
 // const c = 10;
 // const d = 2;
 
@@ -24,7 +27,8 @@ console.log("Text из script.js");
 // console.log(sum, diff, multi, div);
 // console.log(`all sum: ${sum + diff + multi + div}`);
 
-// // task4
+// task4
+
 // const a = 1.5;
 // const b = 0.75;
 // console.log(`sum: ${a + b}`);
@@ -33,6 +37,7 @@ console.log("Text из script.js");
 // console.log(`backside: ${c - c * 2}`);
 
 // task5
+
 let myName = {
     firstName: "Artem",
     lastName: "May",
