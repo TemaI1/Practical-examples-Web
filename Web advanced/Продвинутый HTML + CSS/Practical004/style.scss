@@ -1,0 +1,343 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: $colorSecond;
+
+    &_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &_logo {
+            width: 100px;
+            height: 100px;
+            background-color: $colorFirst;
+        }
+
+        &_logo:hover {
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+
+            &_title {
+                color: $colorFirst;
+            }
+
+            &_subtitle {
+                color: $colorFirst;
+            }
+        }
+    }
+
+    &_right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_tel {
+            color: $colorFirst;
+        }
+
+        &_link {
+            color: $colorFirst;
+            border-bottom: 1px dotted $colorFirst;
+        }
+
+        &_link:hover {
+            cursor: pointer;
+            color: black;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.top_navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: $colorFirst;
+
+    &_menu {
+        padding-left: 50px;
+        padding-right: 50px;
+        color: whitesmoke;
+        border-left: 1px solid whitesmoke;
+        border-right: 1px solid whitesmoke;
+    }
+
+    &_menu:hover {
+        text-decoration: underline;
+    }
+}
+
+.back_img {
+    width: 100%;
+}
+
+.top_location {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 8px;
+    padding-bottom: 23px;
+
+    &_name {
+        color: $colorFirst;
+    }
+
+    &_name:not(:last-child)::after {
+        content: ' /';
+    }
+
+    &_name:not(:last-child) {
+        text-decoration: underline;
+    }
+}
+
+.midle_content {
+    display: flex;
+    gap: 100px;
+
+    &_left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_menu {
+            color: $colorFirst;
+
+            &_li {
+                margin-left: 30px;
+                margin-bottom: 5px;
+                color: $colorFirst;
+            }
+
+            &_li:hover {
+                cursor: pointer;
+                color: black;
+            }
+        }
+    }
+
+    &_right {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        &_item {
+            width: 250px;
+            background-color: $colorSecond;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0px;
+
+            &_text {
+                width: 200px;
+                color: $colorFirst;
+            }
+
+            &_price {
+                color: rgb(41, 41, 41);
+            }
+
+            &_icon {
+                margin-left: 80px;
+                fill: whitesmoke;
+            }
+        }
+
+        &_item:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
+
+.midle_content_page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &_num {
+        color: $colorFirst;
+    }
+
+    &_num:hover {
+        cursor: pointer;
+        color: black;
+    }
+}
+
+.midle_content_footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    &_left {
+        width: 500px;
+
+        &_text {
+            color: $colorFirst;
+        }
+    }
+
+    &_right {
+        width: 500px;
+
+        &_text {
+            color: $colorFirst;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $colorFirst;
+    justify-content: space-between;
+
+    &_left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_text {
+            color: whitesmoke;
+        }
+    }
+
+    &_midle {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_link {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+
+        &_link:hover {
+            text-decoration: none;
+        }
+    }
+
+    &_right_link {
+        color: whitesmoke;
+
+        &_span {
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width: 580px) {
+    .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .midle_content {
+        flex-direction: column;
+    }
+
+    .midle_content_right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top_navigation {
+        flex-direction: column;
+        gap: 20px;
+
+        &_menu {
+            border: none;
+        }
+    }
+
+    .top_location {
+        gap: 5px;
+    }
+
+    .midle_content {
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_midle {
+        display: none;
+    }
+}
+
+@media(max-width: 1024px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .top_navigation_menu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .top_location {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .midle_content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
