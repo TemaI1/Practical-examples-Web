@@ -12,7 +12,6 @@ array3[1] = 2;
 array3[2] = 3;
 console.log(array3[0], array3[1], array3[2]);
 
-
 // task2
 
 const array4 = [1, 2, 3];
@@ -77,3 +76,43 @@ for (let i = 0; i < array7.length; i++) {
     result2 += array7[i];
 }
 console.log(result2);
+
+let str = "-";
+for (let i = 1; i <= 9; i++) {
+    str += i + "-";
+}
+console.log(str);
+
+const array8 = [2, 5, 9, 0, 3, 1, 4];
+for (let i = 0; i < array8.length; i++) {
+    if (array8[i] != 0) {
+        console.log(array8[i]);
+    } else {
+        break;
+    }
+}
+
+// task5
+
+const array9 = [2, 6, 9, 2, 6, 4, 3, 5, 10, 7];
+for (let i = 0; i < array9.length; i++) {
+    if (array9[i] % 2 === 0) {
+        console.log(array9[i] ** 2);
+    }
+    if (array9[i] % 3 === 0) {
+        console.log(array9[i] ** 3);
+    }
+}
+
+result3 = 0;
+const array10 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+for (let i = 0; i < array10.length; i++) {
+    if (array10[i] === 3) {
+        result3++;
+    }
+}
+console.log(result3);
+
+const array11 = [1, 2, 3, 4, 5];
+array11.splice(1, 2);
+console.log(array11);
