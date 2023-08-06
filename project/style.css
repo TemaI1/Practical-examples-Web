@@ -96,6 +96,7 @@ body {
   gap: 15px;
   padding: 16px 40px;
   background-color: #A62033;
+  border: 1px solid #A62033;
   border-radius: 7px;
   fill: #ffffff;
 }
@@ -103,6 +104,15 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+}
+.head_bot_center_catalog:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #A62033;
+  fill: #A62033;
+}
+.head_bot_center_catalog:hover .head_bot_center_catalog_text {
+  color: #A62033;
 }
 .head_bot_center_search {
   display: flex;
