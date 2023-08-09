@@ -323,6 +323,8 @@ body {
 .main_section_catalog_product {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 20px 0px;
 }
 .main_section_catalog_product_left {
@@ -403,12 +405,52 @@ body {
 }
 .main_section_news_section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 20px 0px;
 }
 .main_section_news_section_left {
   width: 550px;
   height: 270px;
-  background-image: url(img/clothing_model_10.jpg);
-  background-size: cover;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_10.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 13px solid #2B4040;
+}
+.main_section_news_section_left_info {
+  font-size: 14px;
+  font-weight: 500;
+  color: #AEB0B3;
+}
+.main_section_news_section_left_text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.main_section_news_section_right {
+  width: 550px;
+  height: 270px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_11.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 13px solid #2B4040;
+}
+.main_section_news_section_right_info {
+  font-size: 14px;
+  font-weight: 500;
+  color: #AEB0B3;
+}
+.main_section_news_section_right_text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
