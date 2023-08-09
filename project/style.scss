@@ -391,6 +391,7 @@ body {
                 align-items: center;
                 background-color: #F0F1F2;
                 padding: 0px 30px;
+                border: 2px solid #2B4040;
                 border-radius: 10px;
 
                 &_img {
@@ -433,6 +434,7 @@ body {
                 align-items: center;
                 background-color: #F0F1F2;
                 padding: 0px 30px;
+                border: 2px solid #2B4040;
                 border-radius: 10px;
 
                 &_img {
@@ -469,5 +471,27 @@ body {
                 }
             }
         }
+    }
+
+    &_news {
+
+        &_title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &_section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+
+            &_left {
+                width: 550px;
+                height: 270px;
+                background-image: url(img/clothing_model_10.jpg);
+                background-size: cover;
+            }
+        }
+
     }
 }

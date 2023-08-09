@@ -331,6 +331,7 @@ body {
   align-items: center;
   background-color: #F0F1F2;
   padding: 0px 30px;
+  border: 2px solid #2B4040;
   border-radius: 10px;
 }
 .main_section_catalog_product_left_img {
@@ -366,6 +367,7 @@ body {
   align-items: center;
   background-color: #F0F1F2;
   padding: 0px 30px;
+  border: 2px solid #2B4040;
   border-radius: 10px;
 }
 .main_section_catalog_product_right_img {
@@ -394,4 +396,19 @@ body {
 .main_section_catalog_product_right_content_text {
   font-size: 16px;
   font-weight: 600;
+}
+.main_section_news_title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main_section_news_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.main_section_news_section_left {
+  width: 550px;
+  height: 270px;
+  background-image: url(img/clothing_model_10.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
