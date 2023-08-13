@@ -16,18 +16,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 40px;
 
     &_top {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         &_left {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
 
             &_place {
                 display: flex;
@@ -81,7 +81,7 @@ body {
 
     &_bot {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         &_left {
             display: flex;
@@ -299,7 +299,7 @@ body {
 }
 
 .main_section {
-    margin: 30px 0px;
+    margin: 40px 0px;
 
     &_popular {
 
@@ -532,6 +532,12 @@ body {
                 }
             }
 
+            &_left:hover {
+                cursor: pointer;
+                filter: brightness(105%);
+                border-left-color: #A62033;
+            }
+
             &_right {
                 width: 550px;
                 height: 270px;
@@ -556,6 +562,12 @@ body {
                     color: #ffffff;
                 }
             }
+
+            &_right:hover {
+                cursor: pointer;
+                filter: brightness(105%);
+                border-left-color: #A62033;
+            }
         }
 
     }
@@ -576,4 +588,135 @@ body {
             max-width: 900px;
         }
     }
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #2B4040;
+    background-image: url(img/fon_3.svg);
+    background-position: center;
+    padding: 90px 0px 30px 0px;
+
+    &_top {
+        display: flex;
+        justify-content: space-around;
+
+        &_social {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #AEB0B3;
+            }
+
+            &_icon {
+                display: flex;
+                gap: 20px;
+                fill: #F0F1F2;
+
+                &_item:hover {
+                    cursor: pointer;
+                    fill: #A62033;
+                }
+            }
+        }
+
+        &_catalog {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #AEB0B3;
+            }
+
+            &_link {
+                font-size: 14px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+
+            &_link:hover {
+                cursor: pointer;
+                color: #A62033;
+            }
+        }
+
+        &_buyers {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #AEB0B3;
+            }
+
+            &_link {
+                font-size: 14px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+
+            &_link:hover {
+                cursor: pointer;
+                color: #A62033;
+            }
+        }
+
+        &_office {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #AEB0B3;
+            }
+
+            &_text {
+                font-size: 14px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_title {
+                font-size: 14px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+
+            &_text {
+                font-size: 14px;
+                font-weight: 500;
+                color: #AEB0B3;
+            }
+        }
+    }
+
 }
