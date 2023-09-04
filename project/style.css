@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .head_top_left {
   display: flex;
@@ -72,6 +73,7 @@ body {
 .head_bot {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .head_bot_left {
   display: flex;
@@ -600,4 +602,34 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #AEB0B3;
+}
+
+@media (max-width: 1440px) {
+  .head_bot {
+    gap: 5px;
+  }
+  .head_bot_center_search_input {
+    width: 200px;
+  }
+  .slide_show {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .main_section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .head_bot {
+    gap: 20px;
+  }
+  .slide_show_all {
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .head_top {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
