@@ -37,7 +37,7 @@ body {
   gap: 10px;
 }
 .head_top_left_place_img {
-  width: 20px;
+  width: 35px;
 }
 .head_top_left_place_text {
   font-size: 14px;
@@ -50,7 +50,7 @@ body {
   gap: 10px;
 }
 .head_top_left_phone_img {
-  width: 20px;
+  width: 30px;
 }
 .head_top_left_phone_text {
   font-size: 14px;
@@ -75,21 +75,8 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.head_bot_left {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
 .head_bot_left_logo {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #A62033;
-  border-radius: 40%;
-}
-.head_bot_left_logname {
-  font-size: 21px;
-  font-weight: 700;
-  color: #A62033;
+  width: 350px;
 }
 .head_bot_center {
   display: flex;
@@ -156,7 +143,7 @@ body {
   gap: 5px;
 }
 .head_bot_right_icon_img {
-  width: 30px;
+  width: 35px;
 }
 .head_bot_right_icon_text {
   font-size: 14px;
@@ -602,6 +589,29 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #AEB0B3;
+}
+
+.authorization {
+  display: flex;
+}
+.authorization_left {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.authorization_left_head {
+  display: flex;
+}
+.authorization_left_head_logo {
+  width: 350px;
+}
+.authorization_left_head_right {
+  display: flex;
+}
+.authorization_right {
+  width: 50%;
+  background-color: #505559;
 }
 
 @media (max-width: 1440px) {
