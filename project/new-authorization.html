@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunsed loved</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="authorization">
+        <main class="authorization_left">
+            <section class="authorization_left_head">
+                <img class="authorization_left_head_logo" src="img/main-logo2.png" alt="logo">
+                <div class="authorization_left_head_right">
+                    <img class="authorization_left_head_right_icon" src="img/authorization_head_right.svg" alt="icon">
+                    <p class="authorization_left_head_right_text">Вернуться на главную</p>
+                </div>
+            </section>
+            <section class="authorization_left_content">
+                <h2 class="authorization_left_content_title">Регистрация новых пользоватлей</h2>
+                <div class="authorization_left_content_radio">
+                    <div class="authorization_left_content_radio_item">
+                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                        <label for="radio-1">Частное лицо</label>
+                    </div>
+                    <div class="authorization_left_content_radio_item">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2">Организация</label>
+                    </div>
+                </div>
+                <input class="authorization_left_content_input" type="text" placeholder="ФИО" required maxlength="70">
+                <input class="authorization_left_content_input" type="tel" placeholder="Номер телефона" required
+                    maxlength="30">
+                <input class="authorization_left_content_input" type="email" placeholder="Адрес электронной почты"
+                    required maxlength="70">
+                <input class="authorization_left_content_input" type="password" placeholder="Пароль" required
+                    maxlength="70">
+                <input class="authorization_left_content_input" type="password" placeholder="Повторите пароль" required
+                    maxlength="70">
+                <button class="authorization_left_content_button">Зарегистрироваться</button>
+            </section>
+            <section class="authorization_left_bottom">
+                <p class="authorization_left_bottom_text">Уже есть аккаунт?</p>
+                <p class="authorization_left_bottom_textout">Войти</p>
+            </section>
+        </main>
+        <div class="authorization_right"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
