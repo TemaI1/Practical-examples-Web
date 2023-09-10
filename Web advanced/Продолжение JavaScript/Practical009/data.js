@@ -9,7 +9,7 @@ export const dataCar = `[
         "box": "automatic",
         "driveUnit": "front",
         "owners": "3",
-        "url": ""
+        "url": "https://i.pinimg.com/564x/cb/0f/7a/cb0f7a81b75ee924c32dbfa885efd573.jpg"
     },
     {
         "carMake": "Audi",
@@ -21,6 +21,6 @@ export const dataCar = `[
         "box": "automatic",
         "driveUnit": "full",
         "owners": "1",
-        "url": ""
+        "url": "https://i.pinimg.com/564x/21/2a/7f/212a7f516509f933a02a680a7e54b9eb.jpg"
     }]
     `;
