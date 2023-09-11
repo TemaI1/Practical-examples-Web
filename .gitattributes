@@ -1,1 +1,2 @@
-*.js linguist-detectable=true
+Web advanced/* linguist-documentation=false
+Web advanced/* linguist-vendored
