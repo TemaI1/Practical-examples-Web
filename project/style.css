@@ -318,7 +318,7 @@ body {
   gap: 30px;
   margin: 20px 0px;
 }
-.main_section_catalog_product_left {
+.main_section_catalog_product_item {
   display: flex;
   gap: 50px;
   align-items: center;
@@ -327,77 +327,35 @@ body {
   border: 2px solid #2B4040;
   border-radius: 10px;
 }
-.main_section_catalog_product_left_img {
-  width: 170px;
-  height: 200px;
+.main_section_catalog_product_item_img {
+  width: 220px;
+  height: 250px;
   opacity: 0.9;
 }
-.main_section_catalog_product_left_content {
+.main_section_catalog_product_item_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.main_section_catalog_product_left_content_title {
+.main_section_catalog_product_item_content_title {
   font-size: 24px;
   font-weight: 700;
   color: #1F2830;
 }
-.main_section_catalog_product_left_content_subtitle {
+.main_section_catalog_product_item_content_subtitle {
   display: flex;
   gap: 10px;
 }
-.main_section_catalog_product_left_content_subtitle_text {
+.main_section_catalog_product_item_content_subtitle_text {
   font-size: 16px;
   font-weight: 500;
   color: #AEB0B3;
 }
-.main_section_catalog_product_left_content_subtitle_text:hover {
+.main_section_catalog_product_item_content_subtitle_text:hover {
   cursor: pointer;
   color: #1F2830;
 }
-.main_section_catalog_product_left_content_text {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1F2830;
-}
-.main_section_catalog_product_right {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  background-color: #F0F1F2;
-  padding: 0px 30px;
-  border: 2px solid #2B4040;
-  border-radius: 10px;
-}
-.main_section_catalog_product_right_img {
-  width: 170px;
-  height: 200px;
-  opacity: 0.9;
-}
-.main_section_catalog_product_right_content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.main_section_catalog_product_right_content_title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1F2830;
-}
-.main_section_catalog_product_right_content_subtitle {
-  display: flex;
-  gap: 10px;
-}
-.main_section_catalog_product_right_content_subtitle_text {
-  font-size: 16px;
-  font-weight: 500;
-  color: #AEB0B3;
-}
-.main_section_catalog_product_right_content_subtitle_text:hover {
-  cursor: pointer;
-  color: #1F2830;
-}
-.main_section_catalog_product_right_content_text {
+.main_section_catalog_product_item_content_text {
   font-size: 16px;
   font-weight: 600;
   color: #1F2830;
@@ -414,7 +372,7 @@ body {
   gap: 30px;
   margin: 20px 0px;
 }
-.main_section_news_section_left {
+.main_section_news_section_item {
   width: 550px;
   height: 270px;
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_10.jpg) center/cover;
@@ -426,44 +384,26 @@ body {
   box-sizing: border-box;
   border-left: 13px solid #2B4040;
 }
-.main_section_news_section_left_info {
+.main_section_news_section_item_info {
   font-size: 14px;
   font-weight: 500;
   color: #AEB0B3;
 }
-.main_section_news_section_left_text {
+.main_section_news_section_item_text {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
 }
-.main_section_news_section_left:hover {
-  cursor: pointer;
-  filter: brightness(105%);
-  border-left-color: #A62033;
+.main_section_news_section_item_two {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_12.jpg) center/cover;
 }
-.main_section_news_section_right {
-  width: 550px;
-  height: 270px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_11.jpg) center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  border-left: 13px solid #2B4040;
+.main_section_news_section_item_three {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_9.jpg) center/cover;
 }
-.main_section_news_section_right_info {
-  font-size: 14px;
-  font-weight: 500;
-  color: #AEB0B3;
+.main_section_news_section_item_four {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_8.jpg) center/cover;
 }
-.main_section_news_section_right_text {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-}
-.main_section_news_section_right:hover {
+.main_section_news_section_item:hover {
   cursor: pointer;
   filter: brightness(105%);
   border-left-color: #A62033;

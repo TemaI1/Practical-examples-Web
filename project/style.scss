@@ -379,7 +379,7 @@ body {
             gap: 30px;
             margin: 20px 0px;
 
-            &_left {
+            &_item {
                 display: flex;
                 gap: 50px;
                 align-items: center;
@@ -389,8 +389,8 @@ body {
                 border-radius: 10px;
 
                 &_img {
-                    width: 170px;
-                    height: 200px;
+                    width: 220px;
+                    height: 250px;
                     opacity: 0.9;
                 }
 
@@ -427,56 +427,6 @@ body {
                         color: #1F2830;
                     }
 
-                }
-            }
-
-            &_right {
-                display: flex;
-                gap: 50px;
-                align-items: center;
-                background-color: #F0F1F2;
-                padding: 0px 30px;
-                border: 2px solid #2B4040;
-                border-radius: 10px;
-
-                &_img {
-                    width: 170px;
-                    height: 200px;
-                    opacity: 0.9;
-                }
-
-                &_content {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    &_title {
-                        font-size: 24px;
-                        font-weight: 700;
-                        color: #1F2830;
-                    }
-
-                    &_subtitle {
-                        display: flex;
-                        gap: 10px;
-
-                        &_text {
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #AEB0B3;
-                        }
-
-                        &_text:hover {
-                            cursor: pointer;
-                            color: #1F2830;
-                        }
-                    }
-
-                    &_text {
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: #1F2830;
-                    }
                 }
             }
         }
@@ -497,7 +447,7 @@ body {
             gap: 30px;
             margin: 20px 0px;
 
-            &_left {
+            &_item {
                 width: 550px;
                 height: 270px;
                 background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_10.jpg) center/cover;
@@ -520,40 +470,21 @@ body {
                     font-weight: 600;
                     color: #ffffff;
                 }
-            }
 
-            &_left:hover {
-                cursor: pointer;
-                filter: brightness(105%);
-                border-left-color: #A62033;
-            }
-
-            &_right {
-                width: 550px;
-                height: 270px;
-                background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_11.jpg) center/cover;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-                gap: 10px;
-                padding: 20px;
-                box-sizing: border-box;
-                border-left: 13px solid #2B4040;
-
-                &_info {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #AEB0B3;
+                &_two {
+                    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_12.jpg) center/cover;
                 }
 
-                &_text {
-                    font-size: 18px;
-                    font-weight: 600;
-                    color: #ffffff;
+                &_three {
+                    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_9.jpg) center/cover;
+                }
+
+                &_four {
+                    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), url(img/clothing_model_8.jpg) center/cover;
                 }
             }
 
-            &_right:hover {
+            &_item:hover {
                 cursor: pointer;
                 filter: brightness(105%);
                 border-left-color: #A62033;
