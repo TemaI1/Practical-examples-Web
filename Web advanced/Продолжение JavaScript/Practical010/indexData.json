@@ -3,36 +3,48 @@
         "img": "img/store_photo.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     },
     {
         "img": "img/store_photo_2.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     },
     {
         "img": "img/store_photo_3.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     },
     {
         "img": "img/store_photo_4.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     },
     {
         "img": "img/store_photo_5.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     },
     {
         "img": "img/store_photo_6.png",
         "name": "ELLERY X M'O CAPSULE",
         "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-        "price": "$52.00"
+        "price": "$52.00",
+        "color": "Red",
+        "size": "XL"
     }
 ]
