@@ -152,6 +152,6 @@ async function fetchIndexData() {
 fetchIndexData();
 
 // const footerShop = document.querySelector('.footer_shop');
-// if (!footerShop.childNodes.length === 0) {
+// if (footerShop.childNodes.length !== 0) {
 //     footerShop.textContent = "Cart Items";
 // }
