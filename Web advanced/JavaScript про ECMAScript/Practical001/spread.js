@@ -67,3 +67,34 @@ const bothGroupsTime = [...group1PracticeTime, ...group2PracticeTime];
 console.log(bothGroupsTime);
 const maxTimeBothGroups = findMax(...bothGroupsTime);
 console.log(maxTimeBothGroups); // 160
+
+
+
+
+const student = {
+    name: "Alex",
+    age: "20"
+};
+
+const getYear = (age, currenYear) => {
+    return currenYear - age;
+};
+console.log(getYear(student.age, 2023));
+
+const addField = (object, key, value) => {
+    object[key] = value;
+    return object;
+}
+const updateStudent = addField(student, "lastName", "Belkin");
+console.log(student);
+console.log(updateStudent);
+
+const addNewField = (object, key, value) => {
+    return {
+        ...object,
+        [key]: value
+    }
+}
+const updateNewStudent = addNewField(student, "precticalTime", "214");
+console.log(student);
+console.log(updateNewStudent);
