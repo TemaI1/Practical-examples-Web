@@ -27,13 +27,13 @@ getUserData(39);
 // ""Отправка данных на сервер""
 
 function saveUserData(myUser) {
-    fetch("https://api.github.com/users", {
+    fetch("https://httpbin.org/post", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(myUser)
     })
-        .then(() => {
-            console.log('User data saved successfully');
+        .then((response) => {
+            console.log(response);
         })
         .catch(error => console.error(error));
 }
