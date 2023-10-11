@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        &_img{
+            width: 40px;
+            height: 40px;
+        }
+
+        &_title{
+            color: #292F36;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        &_title:hover{
+            cursor: pointer;
+        }
+    }
+
+    &_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        &_link{
+            color: #292F36;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        &_link:hover{
+            cursor: pointer;
+            color: #88193c;
+        }
+    }
+}
+
+.show{
+    margin-top: 50px;
+
+    &_left{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+        background-image: url(img/show_photo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+
+        &_title{
+            margin-left: 2rem;
+            max-width: 450px;
+            color: #292F36;
+            font-size: 65px;
+            font-weight: 400;
+        }
+    
+        &_text{
+            margin-left: 2rem;
+            max-width: 450px;
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    
+        &_button{
+            margin-left: 2rem;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 25px 45px;
+            border-radius: 20px;
+            border: 1px solid #292F36;
+            background-color: #292F36;
+        }
+
+        &_button:hover{
+            cursor: pointer;
+            border: 1px solid #292F36;
+            background-color: #88193c;
+        }
+    }
+}
+
+.catalog{
+    margin-top: 50px;
+
+    &_text{
+        &_title{
+            text-align: center;
+            color: #292F36;
+            font-size: 50px;
+            font-weight: 400;
+        }
+    
+        &_subtitle{
+            text-align: center;
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+
+    &_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+
+        &_item{
+            margin-top: 30px;
+
+            &_under{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_title{
+                    margin-top: 10px;
+                    color: #292F36;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+    
+                &_text{
+                    margin-top: 5px;
+                    color: #4D5053;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+
+                &_right:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+.statistics{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    background-color: #F4F0EC;
+
+    &_item{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+
+        &_num{
+            color: #CDA274;
+            font-size: 85px;
+            font-weight: 400;
+        }
+        &_text{
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+}
+
+.news{
+    margin-top: 50px;
+
+    &_text{
+        &_title{
+            text-align: center;
+            color: #292F36;
+            font-size: 50px;
+            font-weight: 400;
+        }
+    
+        &_subtitle{
+            text-align: center;
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+
+    &_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &_color{
+            background: #F4F0EC;
+        }
+
+        &_item{
+            margin-top: 30px;
+            border: 1px solid #E7E7E7;
+            box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+            padding: 20px;
+            border-radius: 30px;
+
+            &_img{
+                border-radius: 30px 30px 0 0;
+            }
+
+            &_under{
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                max-width: 340px;
+
+                &_title{
+                    margin-top: 10px;
+                    color: #292F36;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+    
+                &_text{
+                    margin-top: 40px;
+                    color: #4D5053;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                &_arrow:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+.footer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+
+    &_left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 300px;
+
+        &_logotext{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &_text{
+                color: #292F36;
+                font-size: 40px;
+                font-weight: 400;
+            }
+
+            &_text:hover{
+                cursor: pointer;
+            }
+        }
+
+        &_text{
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        &_icon{
+            display: flex;
+            gap: 30px;
+
+            &_item{
+                fill: rgb(113, 138, 169);
+            }
+
+            &_item:hover{
+                cursor: pointer;
+                fill: #88193c;
+            }
+        }
+    }
+
+    &_mid{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        &_title{
+            color: #292F36;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        &_link{
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        &_link:hover{
+            cursor: pointer;
+            color: #88193c;
+        }
+    }
+
+    &_right{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 300px;
+
+        &_title{
+            color: #292F36;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        &_text{
+            color: #4D5053;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media(max-width: 1300px){
+    .header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .show {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 1100px){
+    .catalog_content_item_img{
+        width: 400px;
+    }
+}
+
+@media(max-width: 700px){
+    .header_left_title{
+        font-size: 30px;
+    }
+
+    .header_left_img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header_right {
+        gap: 10px;
+    }
+
+    .catalog {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .catalog_content_item_img{
+        width: 330px;
+    }
+
+    .news{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .news_content_item_img{
+        width: 300px;
+    }
+
+    .footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
