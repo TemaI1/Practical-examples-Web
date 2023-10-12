@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="discountGenerate()">Создать скидку</button>
+        <h2>{{ product.name }}</h2>
+        <p>без скидки: {{ product.price }}</p>
+        <p>со скидкой: {{ discountPrice }}</p>
+        <img :src="product.photo" alt="photo" width="440px" height="300px">
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="app2">
+        <div v-for="{id, name, age} in users">
+            <p>id: {{id}}</p>
+            <p>name: {{name}}</p>
+            <p>age: {{age}}</p>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="app3">
+        <div v-for="item in items" :key="item.id">
+            <input type="checkbox" name="куплено" v-model="item.isBuy">
+            <input type="number" name="ввести количество" v-model.number="item.count">
+            <span>{{item.name}}</span>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="app4">
+        <input type="number" name="Ввести количество" id="" v-model.number="newProduct.count">
+        <input type="text" name="Ввести название" id="" v-model.number="newProduct.name">
+        <button @click="addProduct">Добавить товар</button>
+        <div class="products">
+            <div class="product" v-for="item in items" :key="item.id">
+                <input type="checkbox" name="Куплено" id="" v-model="item.isBuy">
+                <input type="number" name="Ввести количество" id="" v-model.number="item.count">
+                <span>{{ item.name }}</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
