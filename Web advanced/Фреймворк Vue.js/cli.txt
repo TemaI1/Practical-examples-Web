@@ -1,0 +1,233 @@
+<template>
+  <div>
+    <h1>Текст на странице с MyComponent</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'MyComponent'
+}
+</script>
+
+<template>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyComponent />
+  </div>
+</template>
+
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+import MyComponent from './components/MyComponent.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+    MyComponent
+  }
+}
+</script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<template>
+    <div>
+        <div class="preview">
+            <img :src='imglinks[currentImg]' alt="img" class="mainimg">
+        </div>
+        <div class="images">
+            <img v-for="(img, index) in imglinks" :src="img" :key="index" @click="currentImg=index">
+        </div>
+    </div>
+</template>
+<script>
+export default {
+  name: 'GalleryComp',
+  data () {
+    return {
+      imglinks: [
+        'https://avatars.mds.yandex.net/i?id=410557de4e75d41af00bb51be828290b_l-4620768-images-thumbs&n=27&h=480&w=480', 'https://static.rustore.ru/apk/256380351/content/ICON/d4db7e5a-8a8d-46ad-9509-1cefcf2e40ab.jpg', 'https://play-lh.googleusercontent.com/c_RFVsWfu89ctt7B6smzohv5UBVietoRji26alQNBlOJP6if4LzJAkL3Bw-2MxvuUKk'
+      ],
+      currentImg: 0
+    }
+  }
+}
+</script>
+<style>
+img {
+    width: 250px;
+}
+
+.mainimg {
+    width: 500px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<template>
+  <div id="app">
+  <GalleryComp />
+  </div>
+</template>
+
+<script>
+import GalleryComp from './components/GalleryComp.vue'
+
+export default {
+  name: 'App',
+  components: {
+    GalleryComp
+  }
+}
+</script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<template>
+    <div>
+      <div class="name">{{product.name}}</div>
+      <div class="price">{{product.price}}</div>
+    </div>
+</template>
+<script>
+export default {
+  name: 'ProductComp',
+  // props: ['product']
+  props: {
+    product: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
+<style module>
+img {
+    width: 250px;
+}
+
+.mainimg {
+    width: 500px;
+}
+</style>
+
+
+
+<template>
+  <div id="app">
+  <ProductComp v-for="product in productList" :key="product.id" :product="product"/>
+  </div>
+</template>
+
+<script>
+import ProductComp from './components/ProductComp.vue'
+
+export default {
+  name: 'App',
+  components: {
+    ProductComp
+  },
+  data () {
+    return {
+      productList: [
+        {
+          id: 0,
+          name: 'milk',
+          price: 10
+        },
+        {
+          id: 1,
+          name: 'sugar',
+          price: 20
+        },
+        {
+          id: 2,
+          name: 'phone',
+          price: 50
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+methods: {
+    sortUp () {
+      this.productList = this.productList.sort((a, b) =>
+        a.price > b.price ? 1 : -1)
+    },
+    sortDown () {
+      this.productList = this.productList.sort((a, b) =>
+        a.price < b.price ? 1 : -1)
+    }
+  }
