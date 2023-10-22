@@ -8,53 +8,53 @@
     padding-right: calc(50% - 600px);
 }
 
-.header{
+.header {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 
-    &_left{
+    &_left {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5px;
 
-        &_img{
+        &_img {
             width: 40px;
             height: 40px;
         }
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 40px;
             font-weight: 400;
         }
 
-        &_title:hover{
+        &_title:hover {
             cursor: pointer;
         }
     }
 
-    &_right{
+    &_right {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 40px;
 
-        &_link{
+        &_link {
             color: #292F36;
             font-size: 20px;
             font-weight: 400;
         }
 
-        &_link:hover{
+        &_link:hover {
             cursor: pointer;
             color: #88193c;
         }
     }
 }
 
-.blog_show{
+.blog_show {
     margin-top: 30px;
     padding-top: 300px;
     background-image: url(img/blog_show.png);
@@ -64,7 +64,7 @@
     justify-content: center;
     align-items: center;
 
-    &_content{
+    &_content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -74,13 +74,13 @@
         padding: 30px;
         border-radius: 30px 30px 0 0;
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 50px;
             font-weight: 400;
         }
 
-        &_text{
+        &_text {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
@@ -88,7 +88,7 @@
     }
 }
 
-.details_show{
+.details_show {
     margin-top: 30px;
     padding-top: 300px;
     background-image: url(img/details_show.jpg);
@@ -99,46 +99,46 @@
     align-items: center;
 }
 
-.details_content{
+.details_content {
     margin-top: 100px;
     display: flex;
     gap: 40px;
     justify-content: center;
 
-    &_left{
+    &_left {
         max-width: 800px;
         display: flex;
         flex-direction: column;
         gap: 15px;
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 50px;
             font-weight: 400;
         }
 
-        &_img{
+        &_img {
             border-radius: 30px;
         }
-        
-        &_underimg{
+
+        &_underimg {
             display: flex;
             justify-content: space-between;
 
-            &_text{
+            &_text {
                 color: #4D5053;
                 font-size: 16px;
                 font-weight: 400;
             }
         }
 
-        &_text{
+        &_text {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
         }
 
-        &_gap{
+        &_gap {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -148,7 +148,7 @@
             border-radius: 50px;
             border: 2px solid #4D5053;
 
-            &_title{
+            &_title {
                 color: #CDA274;
                 text-align: center;
                 font-size: 25px;
@@ -156,23 +156,23 @@
             }
         }
 
-        &_second{
+        &_second {
             max-width: 800px;
             display: flex;
             flex-direction: column;
             gap: 15px;
-    
-            &_title{
+
+            &_title {
                 color: #292F36;
                 font-size: 50px;
                 font-weight: 400;
             }
-    
-            &_img{
+
+            &_img {
                 border-radius: 30px;
             }
-    
-            &_text{
+
+            &_text {
                 color: #4D5053;
                 font-size: 22px;
                 font-weight: 400;
@@ -180,23 +180,23 @@
         }
     }
 
-    &_right{
+    &_right {
         display: flex;
         flex-direction: column;
         gap: 20px;
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 25px;
             font-weight: 400;
         }
 
-        &_buttons{
+        &_buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
 
-            &_btn{
+            &_btn {
                 padding: 10px 30px;
                 border-radius: 10px;
                 border: none;
@@ -207,7 +207,7 @@
                 font-weight: 400;
             }
 
-            &_btn:hover{
+            &_btn:hover {
                 cursor: pointer;
                 color: #F4F0EC;
                 background: #292F36;
@@ -216,7 +216,7 @@
     }
 }
 
-.blog_post{
+.blog_post {
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -224,13 +224,13 @@
     flex-direction: column;
     gap: 30px;
 
-    &_title{
+    &_title {
         color: #292F36;
         font-size: 50px;
         font-weight: 400;
     }
 
-    &_content{
+    &_content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -242,38 +242,38 @@
         padding: 20px;
         border-radius: 30px;
 
-        &_left{
-            &_img{
+        &_left {
+            &_img {
                 border-radius: 30px;
             }
         }
 
-        &_right{
+        &_right {
             display: flex;
             flex-direction: column;
             gap: 40px;
             max-width: 500px;
 
-            &_title{
+            &_title {
                 color: #292F36;
                 font-size: 25px;
                 font-weight: 600;
                 margin-bottom: 30px;
             }
 
-            &_text{
+            &_text {
                 color: #4D5053;
                 font-size: 22px;
                 font-weight: 400;
             }
 
-            &_transition{
+            &_transition {
                 margin-top: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                &_date{
+                &_date {
                     color: #534d50;
                     font-size: 16px;
                     font-weight: 400;
@@ -287,10 +287,10 @@
     }
 }
 
-.show{
+.show {
     margin-top: 50px;
 
-    &_left{
+    &_left {
         padding-top: 15rem;
         padding-bottom: 15rem;
         background-image: url(img/show_photo.png);
@@ -302,23 +302,23 @@
         align-items: start;
         gap: 30px;
 
-        &_title{
+        &_title {
             margin-left: 2rem;
             max-width: 450px;
             color: #292F36;
             font-size: 65px;
             font-weight: 400;
         }
-    
-        &_text{
+
+        &_text {
             margin-left: 2rem;
             max-width: 450px;
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
         }
-    
-        &_button{
+
+        &_button {
             margin-left: 2rem;
             color: #FFF;
             font-size: 18px;
@@ -329,7 +329,7 @@
             background-color: #292F36;
         }
 
-        &_button:hover{
+        &_button:hover {
             cursor: pointer;
             border: 1px solid #292F36;
             background-color: #88193c;
@@ -337,18 +337,18 @@
     }
 }
 
-.catalog{
+.catalog {
     margin-top: 50px;
 
-    &_text{
-        &_title{
+    &_text {
+        &_title {
             text-align: center;
             color: #292F36;
             font-size: 50px;
             font-weight: 400;
         }
-    
-        &_subtitle{
+
+        &_subtitle {
             text-align: center;
             color: #4D5053;
             font-size: 22px;
@@ -356,36 +356,36 @@
         }
     }
 
-    &_content{
+    &_content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 60px;
 
-        &_item{
+        &_item {
             margin-top: 30px;
 
-            &_under{
+            &_under {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                &_title{
+                &_title {
                     margin-top: 10px;
                     color: #292F36;
                     font-size: 25px;
                     font-weight: 400;
                 }
-    
-                &_text{
+
+                &_text {
                     margin-top: 5px;
                     color: #4D5053;
                     font-size: 22px;
                     font-weight: 400;
                 }
 
-                &_right:hover{
+                &_right:hover {
                     cursor: pointer;
                 }
             }
@@ -394,7 +394,7 @@
 
 }
 
-.statistics{
+.statistics {
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -404,18 +404,19 @@
     justify-content: space-evenly;
     background-color: #F4F0EC;
 
-    &_item{
+    &_item {
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-items: center;
 
-        &_num{
+        &_num {
             color: #CDA274;
             font-size: 85px;
             font-weight: 400;
         }
-        &_text{
+
+        &_text {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
@@ -423,18 +424,18 @@
     }
 }
 
-.news{
+.news {
     margin-top: 50px;
 
-    &_text{
-        &_title{
+    &_text {
+        &_title {
             text-align: center;
             color: #292F36;
             font-size: 50px;
             font-weight: 400;
         }
-    
-        &_subtitle{
+
+        &_subtitle {
             text-align: center;
             color: #4D5053;
             font-size: 22px;
@@ -442,63 +443,63 @@
         }
     }
 
-    &_content{
+    &_content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
 
-        &_color{
+        &_color {
             background: #F4F0EC;
         }
 
-        &_item{
+        &_item {
             margin-top: 30px;
             border: 1px solid #E7E7E7;
             box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
             padding: 20px;
             border-radius: 30px;
 
-            &_img{
+            &_img {
                 border-radius: 30px 30px 0 0;
             }
 
-            &_under{
+            &_under {
                 display: flex;
                 justify-content: space-between;
                 align-items: end;
                 max-width: 340px;
 
-                &_title{
+                &_title {
                     margin-top: 10px;
                     color: #292F36;
                     font-size: 25px;
                     font-weight: 400;
                 }
-    
-                &_text{
+
+                &_text {
                     margin-top: 40px;
                     color: #4D5053;
                     font-size: 16px;
                     font-weight: 400;
                 }
 
-                &_arrow:hover{
+                &_arrow:hover {
                     cursor: pointer;
                 }
             }
         }
     }
 
-    &_scrol{
+    &_scrol {
         margin-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
 
-        &_num{
+        &_num {
             padding: 20px;
             border-radius: 100%;
             border: 1px solid #CDA274;
@@ -512,9 +513,9 @@
             border: 1px solid #88193c;
         }
 
-        &_arrow{
+        &_arrow {
             background-color: #CDA274;
-            padding: 1px;  
+            padding: 1px;
             border-radius: 100%;
         }
 
@@ -525,7 +526,7 @@
     }
 }
 
-.footer{
+.footer {
     margin-top: 80px;
     margin-bottom: 80px;
     display: flex;
@@ -533,85 +534,85 @@
     gap: 50px;
     justify-content: space-evenly;
 
-    &_left{
+    &_left {
         display: flex;
         flex-direction: column;
         gap: 20px;
         max-width: 300px;
 
-        &_logotext{
+        &_logotext {
             display: flex;
             align-items: center;
             gap: 5px;
 
-            &_text{
+            &_text {
                 color: #292F36;
                 font-size: 40px;
                 font-weight: 400;
             }
 
-            &_text:hover{
+            &_text:hover {
                 cursor: pointer;
             }
         }
 
-        &_text{
+        &_text {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
         }
 
-        &_icon{
+        &_icon {
             display: flex;
             gap: 30px;
 
-            &_item{
+            &_item {
                 fill: rgb(113, 138, 169);
             }
 
-            &_item:hover{
+            &_item:hover {
                 cursor: pointer;
                 fill: #88193c;
             }
         }
     }
 
-    &_mid{
+    &_mid {
         display: flex;
         flex-direction: column;
         gap: 25px;
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 25px;
             font-weight: 400;
         }
 
-        &_link{
+        &_link {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
         }
 
-        &_link:hover{
+        &_link:hover {
             cursor: pointer;
             color: #88193c;
         }
     }
 
-    &_right{
+    &_right {
         display: flex;
         flex-direction: column;
         gap: 25px;
         max-width: 300px;
 
-        &_title{
+        &_title {
             color: #292F36;
             font-size: 25px;
             font-weight: 400;
         }
 
-        &_text{
+        &_text {
             color: #4D5053;
             font-size: 22px;
             font-weight: 400;
@@ -620,7 +621,7 @@
 }
 
 
-@media(max-width: 1300px){
+@media(max-width: 1300px) {
     .header {
         margin-left: 20px;
         margin-right: 20px;
@@ -642,8 +643,8 @@
     }
 }
 
-@media(max-width: 1100px){
-    .catalog_content_item_img{
+@media(max-width: 1100px) {
+    .catalog_content_item_img {
         width: 400px;
     }
 
@@ -663,8 +664,8 @@
     }
 }
 
-@media(max-width: 700px){
-    .header_left_title{
+@media(max-width: 700px) {
+    .header_left_title {
         font-size: 30px;
     }
 
@@ -682,34 +683,34 @@
         margin-right: 20px;
     }
 
-    .catalog_content_item_img{
+    .catalog_content_item_img {
         width: 330px;
     }
 
-    .news{
+    .news {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .news_content_item_img{
+    .news_content_item_img {
         width: 300px;
     }
 
-    .footer{
+    .footer {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .blog_post_content_left_img{
+    .blog_post_content_left_img {
         width: 300px;
         height: 300px;
     }
 
-    .blog_post_content_right{
+    .blog_post_content_right {
         max-width: 400px;
     }
 
-    .blog_show_content_title{
+    .blog_show_content_title {
         font-size: 30px;
     }
 
