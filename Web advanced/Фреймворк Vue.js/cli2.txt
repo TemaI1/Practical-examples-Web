@@ -1,0 +1,302 @@
+Создайте компонент "Аутентификация" (Authentication), который будет отображать форму входа или сообщение об успешной аутентификации в зависимости от переданного пропса isAuthenticated. Используйте директиву v-if для условного отображения разных элементов в шаблоне компонента.
+<template>
+<div>
+<div v-if="isAuth">Аутентификация</div>
+<div v-else>
+<input type="text" name="" id="">
+<input type="password" name="" id="">
+<button @click="login" type="submit">Войти</button>
+</div>
+</div>
+</template>
+
+<script>
+export default {
+name: 'AuthenticationComponent',
+props: ['isAuth'],
+
+data () {
+return {
+
+}
+},
+
+mounted () {
+
+},
+
+methods: {
+login () {
+this.$emit('loginAus', true)
+}
+}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
+<template>
+<div id="app">
+<authentication-component @loginAus="isAuth = true" :isAuth="isAuth"></authentication-component>
+</div>
+</template>
+
+<script>
+import AuthenticationComponent from './components/AuthenticationComponent.vue'
+
+export default {
+name: 'App',
+data () {
+return {
+isAuth: false
+}
+},
+components: {
+AuthenticationComponent
+
+}
+}
+</script>
+
+<style lang="scss">
+#app {
+font-family: Avenir, Helvetica, Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-align: center;
+color: #2c3e50;
+margin-top: 60px;
+}
+</style>
+Разработать интерфейс корзины товаров, в котором пользователь может изменять количество товаров в корзине и видеть общую сумму покупки. Каждый товар представлен в виде блока, содержащего поле ввода для изменения количества товара и отображение его цены. При изменении количества товаров в поле ввода, необходимо автоматически пересчитывать стоимость каждого товара и обновлять общую сумму покупки.
+<template>
+<div>
+<div v-for="product in products" :key="product.id">
+<input type="number" name="" id="" v-model.number="product.quantity">
+<p>Название: {{ product.name }}</p>
+<p>Цена: {{ product.price }}</p>
+<p>Стоимость: {{ product.quantity * product.price }}</p>
+</div>
+ИТОГО: {{ totalPrice }}
+</div>
+</template>
+
+<script>
+export default {
+name: 'ShoppingCart',
+
+data () {
+return {
+products: [
+{
+id: 1,
+quantity: 5,
+price: 5000,
+name: 'Бегемот'
+},
+{
+id: 2,
+quantity: 38,
+price: 2000,
+name: 'Попугай'
+},
+{
+id: 3,
+quantity: 10,
+price: 1000,
+name: 'Кот'
+}
+]
+}
+},
+
+computed: {
+totalPrice () {
+return this.products.reduce((sum, product) => sum + product.quantity * product.price, 0)
+}
+},
+
+mounted () {
+
+},
+
+methods: {
+
+}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
+<template>
+<div>
+<input @change="changeQuantity" type="number" name="" id="" :value="product.quantity">
+<p>Название: {{ product.name }}</p>
+<p>Цена: {{ product.price }}</p>
+<p>Стоимость: {{ product.quantity * product.price }}</p>
+</div>
+</template>
+
+<script>
+export default {
+name: 'ProductComp',
+props: ['product'],
+
+data () {
+return {
+
+}
+},
+
+mounted () {
+
+},
+
+methods: {
+changeQuantity (event) {
+const quantityData = {
+quantity: +event.target.value,
+product: this.product
+}
+this.$emit('quantity', quantityData)
+}
+}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
+<template>
+<div>
+<product-comp @quantity="changeQuantity" v-for="product in products" :key="product.id"
+:product="product"></product-comp>
+ИТОГО: {{ totalPrice }}
+</div>
+</template>
+
+<script>
+import ProductComp from './ProductComp.vue'
+export default {
+components: { ProductComp },
+name: 'ShoppingCart',
+
+data () {
+return {
+products: [
+{
+id: 1,
+quantity: 5,
+price: 5000,
+name: 'Бегемот'
+},
+{
+id: 2,
+quantity: 38,
+price: 2000,
+name: 'Попугай'
+},
+{
+id: 3,
+quantity: 10,
+price: 1000,
+name: 'Кот'
+}
+]
+}
+},
+
+computed: {
+totalPrice () {
+return this.products.reduce((sum, product) => sum + product.quantity * product.price, 0)
+}
+},
+
+mounted () {
+
+},
+
+methods: {
+changeQuantity (productData) {
+productData.product.quantity = productData.quantity
+}
+}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
+Создайте компонент MortgageCalculator с соответствующим шаблоном и скриптом.
+В шаблоне компонента разместите поля ввода для суммы кредита, процентной ставки и срока кредита, а также элементы для отображения ежемесячного платежа и общей суммы выплаты.
+Используйте директиву v-model для связывания введенных пользователем значений с соответствующими свойствами в компоненте.
+Создайте вычисляемое свойство monthlyPayment, которое будет вычислять ежемесячный платеж на основе введенных значений суммы кредита, процентной ставки и срока кредита.
+Создайте вычисляемое свойство totalPayment, которое будет вычислять общую сумму выплаты по кредиту, учитывая ежемесячный платеж и срок кредита.
+Отобразите значения monthlyPayment и totalPayment в соответствующих элементах шаблона.
+computed: {
+monthlyPayment: function() {
+const rate = this.interestRate / 100 / 12;
+const term = this.loanTerm;
+const principal = this.loanAmount;
+const numerator = rate * Math.pow(1 + rate, term);
+const denominator = Math.pow(1 + rate, term) - 1;
+const payment = principal * (numerator / denominator);
+return payment.toFixed(2);
+},
+totalPayment: function() {
+const term = this.loanTerm;
+const payment = parseFloat(this.monthlyPayment);
+return (term * payment).toFixed(2);
+}
+}
+<template>
+<div>
+<input type="number" step="0.1" name="interestRate" id="" v-model="interestRate" placeholder="Процентная ставка">
+<input type="text" name="loanTerm" id="" v-model="loanTerm" placeholder="Срок кредита">
+<input type="text" name="loanAmount" id="" v-model="loanAmount" placeholder="Велечина займа">
+
+<p>Платёж: {{ monthlyPayment }}</p>
+
+<p>ИТОГО: {{ totalPayment }}</p>
+</div>
+</template>
+
+<script>
+export default {
+name: 'MortgageCalculator',
+
+data () {
+return {
+interestRate: 6.5,
+loanTerm: 120,
+loanAmount: 1000000
+}
+},
+
+computed: {
+monthlyPayment: function () {
+const rate = this.interestRate / 100 / 12
+const term = this.loanTerm
+const principal = this.loanAmount
+const numerator = rate * Math.pow(1 + rate, term)
+const denominator = Math.pow(1 + rate, term) - 1
+const payment = principal * (numerator / denominator)
+return payment.toFixed(2)
+},
+totalPayment: function () {
+const term = this.loanTerm
+const payment = parseFloat(this.monthlyPayment)
+return (term * payment).toFixed(2)
+}
+},
+
+mounted () {
+
+},
+
+methods: {
+
+}
+}
+</script>
+
+<style lang="scss" scoped>
+</style>
