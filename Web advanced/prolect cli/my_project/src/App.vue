@@ -4,6 +4,7 @@
     <HomePageComp />
     <BlogPageComp />
     <DetailsPageComp />
+    <ProjectComp />
     <FooterComp />
   </div>
 </template>
@@ -14,6 +15,7 @@ import HeaderMenuComp from './components/HeaderMenuComp.vue'
 import HomePageComp from './components/HomePageComp.vue'
 import BlogPageComp from './components/BlogPageComp.vue'
 import DetailsPageComp from './components/DetailsPageComp.vue'
+import ProjectComp from './components/ProjectComp.vue'
 
 import FooterComp from './components/FooterComp.vue'
 
@@ -24,6 +26,7 @@ export default {
     HomePageComp,
     BlogPageComp,
     DetailsPageComp,
+    ProjectComp,
     FooterComp
   }
 }
