@@ -1,0 +1,769 @@
+==============================================================================================================================================================
+Создание базового хранилища: Создайте новое Vuex-хранилище, определите в нем состояние (state) и несколько базовых мутаций (mutations). 
+Подключите хранилище к вашему приложению Vue.js и используйте его для управления состоянием приложения.
+Создайте счетчик который хранит состояние count
+Создайте две мутации, которые увеличивают и уменьшают значение счетчика 
+Создайте компонент счетчик
+
+
+import Vue from 'vue'
+import App from './App.vue'
+import store from './store'
+
+Vue.config.productionTip = false
+
+new Vue({
+  store,
+  render: h => h(App),
+}).$mount('#app')
+
+
+
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+    },
+    getters: {
+        //Методы чтения состояния
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+
+<template>
+  <div id="app">
+    {{ counter }}
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+  components: {
+  },
+  mounted(){
+    console.log(this.$store);
+  },
+  methods:{
+    increment(){
+      this.$store.commit('COUNTER_INCREMENT')
+    },
+    decrement(){
+      this.$store.commit('COUNTER_DECREMENT')
+    }
+
+  },
+  computed:{
+    counter(){
+      return this.$store.state.counter
+    }
+  }
+}
+</script>
+
+
+
+
+==============================================================================================================================================================
+Создайте хранилище Vuex с именем "store".
+В состоянии (state) хранилища создайте массив "cartItems", в котором будут храниться объекты товаров в корзине. 
+Каждый объект товара должен иметь следующие свойства: id, name, price.
+Создайте мутацию (mutation) с именем "ADD_ITEM_TO_CART", которая принимает товар в качестве параметра и добавляет его в массив "cartItems".
+Создайте геттер (getter) с именем "cartItems", который возвращает массив товаров в корзине.
+
+
+<template>
+  <div id="app">
+    {{ counter }}
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <br>
+    <input type="text" placeholder="name" v-model="name">
+    <input type="number" placeholder="price" v-model.number="price">
+    <br>
+    <div v-for="(product, index) in products" :key="index">
+      {{ product.name }} - {{ product.price }}
+    </div>
+    <button @click="addProduct">add product</button>
+  </div>
+</template>
+
+<script>
+import { mapMutations, mapGetters } from 'vuex';
+export default {
+  name: 'App',
+  data(){
+    return {
+      name: '',
+      price: ''
+    }
+  },
+  components: {
+  },
+  mounted(){
+    console.log(this.$store);
+  },
+  methods:{
+    ...mapMutations(['COUNTER_INCREMENT', 'COUNTER_DECREMENT', 'ADD_PRODUCT']),
+
+    increment(){
+      // this.$store.commit('COUNTER_INCREMENT')
+      this.COUNTER_INCREMENT()
+    },
+    decrement(){
+      // this.$store.commit('COUNTER_DECREMENT')
+      this.COUNTER_DECREMENT()
+    },
+    addProduct(){
+      const {name, price} = this
+      const newProduct={id:this.products.length, name, price}
+      this.ADD_PRODUCT(newProduct)
+    }
+
+  },
+  computed:{
+    counter(){
+      return this.$store.state.counter
+    },
+    ...mapGetters(['products'])
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0,
+        products:[
+            {
+                id:0,
+                name:'apple',
+                price:100
+            },
+            {
+                id:1,
+                name:'orange',
+                price:150
+            },
+            {
+                id:2,
+                name:'banana',
+                price:50
+            },
+        ]
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        },
+        ADD_PRODUCT(state, product){
+            state.products.push(product)
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+    },
+    getters: {
+        //Методы чтения состояния
+        products(state){
+            return state.products
+        }
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+==============================================================================================================================================================
+Создайте геттер с именем "totalItems", который возвращает общее количество товаров в корзине.
+Создайте геттер с именем "totalPrice", который возвращает общую стоимость всех товаров в корзине.
+Создайте действие (action) с именем "addToCart", которое принимает товар в качестве параметра и вызывает мутацию "ADD_ITEM_TO_CART".
+В компоненте Vue.js создайте список товаров, которые можно добавить в корзину. Каждый товар должен иметь кнопку "Добавить в корзину", 
+при нажатии на которую вызывается метод для добавления товара в корзину.
+Выведите информацию о корзине покупок на вашем компоненте. Отобразите список товаров в корзине, общее количество товаров и общую стоимость.
+
+
+<template>
+  <div id="app">
+    {{ counter }}
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <br>
+    <input type="text" placeholder="name" v-model="name">
+    <input type="number" placeholder="price" v-model.number="price">
+    <br>
+    <div v-for="(product, index) in products" :key="index">
+      {{ product.name }} - {{ product.price }} - {{ product.quantity }}
+    </div>
+    <button @click="addNewProduct">add product</button>
+  </div>
+</template>
+
+<script>
+import { mapMutations, mapGetters, mapActions } from 'vuex';
+export default {
+  name: 'App',
+  data(){
+    return {
+      name: '',
+      price: ''
+    }
+  },
+  components: {
+  },
+  mounted(){
+    console.log(this.$store);
+  },
+  methods:{
+    ...mapMutations(['COUNTER_INCREMENT', 'COUNTER_DECREMENT', 'ADD_PRODUCT']),
+    ...mapActions(['addProduct']),
+
+    increment(){
+      // this.$store.commit('COUNTER_INCREMENT')
+      this.COUNTER_INCREMENT()
+    },
+    decrement(){
+      // this.$store.commit('COUNTER_DECREMENT')
+      this.COUNTER_DECREMENT()
+    },
+    addNewProduct(){
+      const {name, price} = this
+      const newProduct={id:this.products.length, name, price, quantity:1}
+      this.addProduct(newProduct)
+    }
+
+  },
+  computed:{
+    counter(){
+      return this.$store.state.counter
+    },
+    ...mapGetters(['products'])
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0,
+        products:[
+            {
+                id:0,
+                name:'apple',
+                price:100,
+                quantity:1
+            },
+            {
+                id:1,
+                name:'orange',
+                price:150,
+                quantity:1
+            },
+            {
+                id:2,
+                name:'banana',
+                price:50,
+                quantity:1
+            },
+        ],
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        },
+        ADD_PRODUCT(state, product){
+            state.products.push(product)
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+        addProduct(store, product){
+            const findProduct = store.getters.products.find((item) => item.id === product.id);
+            if (findProduct) {
+                findProduct.quantity++;
+            } else {
+                store.commit('ADD_PRODUCT', product)
+            }
+        }
+    },
+    getters: {
+        //Методы чтения состояния
+        products(state){
+            return state.products
+        }
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+
+==============================================================================================================================================================
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0,
+        products:[
+            {
+                id:0,
+                name:'apple',
+                price:100,
+                quantity:1
+            },
+            {
+                id:1,
+                name:'orange',
+                price:150,
+                quantity:1
+            },
+            {
+                id:2,
+                name:'banana',
+                price:50,
+                quantity:1
+            },
+        ],
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        },
+        ADD_PRODUCT(state, product){
+            state.products.push(product)
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+        addProduct(store, product){
+            const findProduct = store.getters.products.find((item) => item.id === product.id);
+            if (findProduct) {
+                findProduct.quantity++;
+            } else {
+                store.commit('ADD_PRODUCT', product)
+            }
+        }
+    },
+    getters: {
+        //Методы чтения состояния
+        products(state){
+            return state.products
+        }
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+
+<template>
+  <div id="app">
+    {{ counter }}
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <br>
+    TOTAL QUANTITY: {{ totalQuantity }}
+    <br>
+    TOTAL PRICE: {{ totalPrice }}
+    <br>
+    <input type="text" placeholder="name" v-model="name">
+    <input type="number" placeholder="price" v-model.number="price">
+    <br>
+    <div v-for="(product, index) in products" :key="index">
+      {{ product.name }} - {{ product.price }} - {{ product.quantity }}
+    </div>
+    <button @click="addNewProduct">add product</button>
+  </div>
+</template>
+
+<script>
+import { mapMutations, mapGetters, mapActions } from 'vuex';
+export default {
+  name: 'App',
+  data(){
+    return {
+      name: '',
+      price: ''
+    }
+  },
+  components: {
+  },
+  mounted(){
+    console.log(this.$store);
+  },
+  methods:{
+    ...mapMutations(['COUNTER_INCREMENT', 'COUNTER_DECREMENT', 'ADD_PRODUCT']),
+    ...mapActions(['addProduct']),
+
+    increment(){
+      // this.$store.commit('COUNTER_INCREMENT')
+      this.COUNTER_INCREMENT()
+    },
+    decrement(){
+      // this.$store.commit('COUNTER_DECREMENT')
+      this.COUNTER_DECREMENT()
+    },
+    addNewProduct(){
+      const {name, price} = this
+      const newProduct={id:this.products.length, name, price, quantity:1}
+      this.addProduct(newProduct)
+    }
+
+  },
+  computed:{
+    counter(){
+      return this.$store.state.counter
+    },
+    ...mapGetters(['products', 'totalQuantity', 'totalPrice'])
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0,
+        products:[
+            {
+                id:0,
+                name:'apple',
+                price:100,
+                quantity:1
+            },
+            {
+                id:1,
+                name:'orange',
+                price:150,
+                quantity:1
+            },
+            {
+                id:2,
+                name:'banana',
+                price:50,
+                quantity:1
+            },
+        ],
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        },
+        ADD_PRODUCT(state, product){
+            state.products.push(product)
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+        addProduct(store, product){
+            const findProduct = store.getters.products.find((item) => item.id === product.id);
+            if (findProduct) {
+                findProduct.quantity++;
+            } else {
+                store.commit('ADD_PRODUCT', product)
+            }
+        }
+    },
+    getters: {
+        //Методы чтения состояния
+        products(state){
+            return state.products
+        },
+        totalQuantity(state){
+            return state.products.reduce((acc, product) => acc+product.quantity,0)
+        },
+        totalPrice(state){
+            return state.products.reduce((acc, product) => acc+product.quantity*product.price,0)
+        }
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+
+==============================================================================================================================================================
+
+
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        //Начальное состояние
+        counter:0,
+        products:[],
+    },
+    mutations: {
+        //Методы изменения состояния
+        COUNTER_INCREMENT(state){
+            state.counter++
+        },
+        COUNTER_DECREMENT(state){
+            state.counter--
+        },
+        ADD_PRODUCT(state, product){
+            state.products.push(product)
+        },
+        SET_PRODUCT_STATE(state, products){
+            state.products = products
+        }
+    },
+    actions: {
+        //Методы для асинхронных операций
+        addProduct(store, product){
+            const findProduct = store.getters.products.find((item) => item.id === product.id);
+            if (findProduct) {
+                findProduct.quantity++;
+            } else {
+                store.commit('ADD_PRODUCT', product)
+            }
+        },
+
+        fetchProducts({commit}) {
+            setTimeout(()=>{
+                commit('SET_PRODUCT_STATE', [
+                    {
+                        id:0,
+                        name:'apple',
+                        price:100,
+                        quantity:1
+                    },
+                    {
+                        id:1,
+                        name:'orange',
+                        price:150,
+                        quantity:1
+                    },
+                    {
+                        id:2,
+                        name:'banana',
+                        price:50,
+                        quantity:1
+                    },
+                ])
+            }, 2000)
+        }
+    },
+    getters: {
+        //Методы чтения состояния
+        products(state){
+            return state.products
+        },
+        totalQuantity(state){
+            return state.products.reduce((acc, product) => acc+product.quantity,0)
+        },
+        totalPrice(state){
+            return state.products.reduce((acc, product) => acc+product.quantity*product.price,0)
+        }
+    },
+    modules: {
+        //Модули VueX для разделения хранилища на подхранилища
+    },
+});
+
+
+
+
+<template>
+  <div id="app">
+    {{ counter }}
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <br>
+    TOTAL QUANTITY: {{ totalQuantity }}
+    <br>
+    TOTAL PRICE: {{ totalPrice }}
+    <br>
+    <input type="text" placeholder="name" v-model="name">
+    <input type="number" placeholder="price" v-model.number="price">
+    <br>
+    <div v-for="(product, index) in products" :key="index">
+      {{ product.name }} - {{ product.price }} - {{ product.quantity }}
+    </div>
+    <button @click="addNewProduct">add product</button>
+  </div>
+</template>
+
+<script>
+import { mapMutations, mapGetters, mapActions } from 'vuex';
+export default {
+  name: 'App',
+  data(){
+    return {
+      name: '',
+      price: ''
+    }
+  },
+  components: {
+  },
+  mounted(){
+    console.log(this.$store);
+    this.fetchProducts()
+  },
+  methods:{
+    ...mapMutations(['COUNTER_INCREMENT', 'COUNTER_DECREMENT', 'ADD_PRODUCT']),
+    ...mapActions(['addProduct', 'fetchProducts']),
+
+    increment(){
+      // this.$store.commit('COUNTER_INCREMENT')
+      this.COUNTER_INCREMENT()
+    },
+    decrement(){
+      // this.$store.commit('COUNTER_DECREMENT')
+      this.COUNTER_DECREMENT()
+    },
+    addNewProduct(){
+      const {name, price} = this
+      const newProduct={id:this.products.length, name, price, quantity:1}
+      this.addProduct(newProduct)
+    }
+
+  },
+  computed:{
+    counter(){
+      return this.$store.state.counter
+    },
+    ...mapGetters(['products', 'totalQuantity', 'totalPrice'])
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+
+
+
+
+==============================================================================================================================================================
