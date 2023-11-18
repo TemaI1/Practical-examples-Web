@@ -1,38 +1,52 @@
 <template>
   <div id="app">
     <HeaderMenuComp />
-    <HomePageComp />
-    <BlogPageComp />
-    <DetailsPageComp />
-    <ProjectComp />
+    <nav class="mt-4">
+      <div class="menu_links">
+        <router-link class="menu_link" to="/">Home</router-link>
+        <router-link class="menu_link" to="/blog">Blog</router-link>
+        <router-link class="menu_link" to="/detail">Details</router-link>
+        <router-link class="menu_link" to="/proj_comp">Project comp</router-link>
+        <router-link class="menu_link" to="/proj_detail">Project Detail</router-link>
+      </div>
+      <router-view />
+    </nav>
     <FooterComp />
   </div>
 </template>
 
 <script>
 import HeaderMenuComp from './components/HeaderMenuComp.vue'
-
-import HomePageComp from './components/HomePageComp.vue'
-import BlogPageComp from './components/BlogPageComp.vue'
-import DetailsPageComp from './components/DetailsPageComp.vue'
-import ProjectComp from './components/ProjectComp.vue'
-
 import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderMenuComp,
-    HomePageComp,
-    BlogPageComp,
-    DetailsPageComp,
-    ProjectComp,
     FooterComp
   }
 }
 </script>
 
 <style>
+.menu_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu_link {
+  color: #292F36;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu_link:hover {
+  color: #88193c;
+}
+
 @media(max-width: 1300px) {
   .header {
     margin-left: 10px;
