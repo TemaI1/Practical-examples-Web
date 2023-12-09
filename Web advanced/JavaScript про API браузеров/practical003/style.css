@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: Snow;
+}
+
+#photo-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.description {
+    color: DarkSlateGray;
+    font-weight: bold;
+    font-weight: 900;
+}
+
+.date {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 100px;
+}
+
+.user_name {
+    color: Grey;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.likes {
+    color: Grey;
+    font-weight: bold;
+    font-weight: 700;
+}
