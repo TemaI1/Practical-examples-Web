@@ -1,0 +1,15 @@
+{
+  "name": "my_new_generate_pass",
+  "version": "1.0.0",
+  "description": "random password generation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "Arte May",
+  "license": "ISC",
+  "dependencies": {
+    "my_new_generate_pass": "^1.0.0"
+  }
+}
