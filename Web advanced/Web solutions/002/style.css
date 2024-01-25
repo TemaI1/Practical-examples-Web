@@ -1,0 +1,10 @@
+.scroll-container {
+    width: 1000px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.scroll-page {
+    height: 100%;
+    font-size: 30px;
+}
