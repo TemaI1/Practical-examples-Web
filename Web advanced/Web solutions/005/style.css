@@ -1,0 +1,17 @@
+:root {
+    --base: #396fa9;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    margin: 20px 50px;
+
+    padding: var(--spacing);
+    background: var(--base);
+    -webkit-filter: blur(var(--blur));
+    filter: blur(var(--blur));
+}
+
+
+
