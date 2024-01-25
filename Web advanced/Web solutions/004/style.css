@@ -1,0 +1,15 @@
+.container {
+    width: 400px;
+}
+
+.card {
+    padding: 10px;
+    border: 3px solid darkred;
+}
+
+.card-description{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
