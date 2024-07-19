@@ -14,7 +14,6 @@
     background-size: cover;
     height: 900px;
     background-position: center center;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,6 +27,7 @@
 }
 
 .top-header-left{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +56,7 @@
 }
 
 .top-header-right-btn{
+    cursor: pointer;
     padding: 10px 15px;
     background-color: #1A3E3E;
     border: none;
@@ -105,6 +106,7 @@
 }
 
 .top-footer-btn{
+    cursor: pointer;
     padding: 10px 50px;
     background-color: #FDFDFD;
     border: 2px solid #FDFDFD;
@@ -119,7 +121,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 800px;
+    padding-top: 150px;
+    padding-bottom: 200px;
 }
 
 .content-info-left{
@@ -157,6 +160,7 @@
 }
 
 .content-info-right-btn{
+    cursor: pointer;
     padding: 10px 15px;
     background-color: #1A3E3E;
     border: none;
@@ -165,4 +169,210 @@
     font-size: 14px;
     font-family: sans-serif;
     max-width: 260px;
+}
+
+
+
+
+
+
+.content-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    background-color: #F3F5F4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-price-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-price-left-subtitle{
+    color: #F2BE22;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.content-price-left-title{
+    font-family: sans-serif;
+}
+
+.content-price-left-text{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.content-price-left-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-price-left-box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.content-price-left-btn{
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #1A3E3E;
+    border: none;
+    border-radius: 3px;
+    color: #FDFDFD;
+    font-size: 14px;
+    font-family: sans-serif;
+    max-width: 260px;
+}
+
+.content-price-right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-price-right-img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+.content-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-rating-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-rating-text-subtitle{
+    color: #F2BE22;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.content-rating-text-title{
+    font-family: sans-serif;
+}
+
+.content-rating-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-rating-card-item-first{
+    background-image: url("img/rating-card-item.png");
+}
+
+.content-rating-card-item-second{
+    background-image: url("img/rating-card-item2.png");
+}
+
+.content-rating-card-item-third{
+    background-image: url("img/rating-card-item3.png");
+}
+
+.content-rating-card-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    width: 320px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-rating-card-item:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.content-rating-card-item-rating{
+    display: flex;
+    /*justify-content: end;*/
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: rgba(205, 214, 219, 0.7);
+    margin-left: auto;
+    border-radius: 3px 0 0 3px;
+}
+
+.content-rating-card-item-rating-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.content-rating-card-item-rating-count{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.content-rating-card-item-info{
+    background-color: rgba(205, 214, 219, 0.3);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-rating-card-item-info-title{
+    color: #fdfdfd;
+    font-family: sans-serif;
+}
+
+.content-rating-card-item-info-subtitle{
+    color: #fdfdfd;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.content-rating-card-item-info-price{
+    background-color: rgba(205, 214, 219, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fdfdfd;
+}
+
+.content-rating-btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #1A3E3E;
+    border: none;
+    border-radius: 3px;
+    color: #FDFDFD;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 260px;
+    max-width: 460px;
 }
